@@ -230,24 +230,26 @@
             transform: translateY(0);
         }
     }
+
+    /* Background dimmer overlay */
+    .nav-overlay {
+        position: fixed;
+        top: 10vh; /* below the navbar */
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
 }
 
-/* Background dimmer overlay */
-.nav-overlay {
-    position: fixed;
-    top: 10vh; /* below the navbar */
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 999;
-}
-
-.nav-overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-}
 
