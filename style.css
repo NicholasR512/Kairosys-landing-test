@@ -99,21 +99,24 @@
     font-size: 1rem;
     color: var(--white);
     padding: 10px 25px;
-    background-color: var(--main-blue);
+    background-color: var(--dark-green);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
 }
 
 #contact-btn:hover {
-    background-color: var(--light-blue);
+    color: var(--black);
+    background-color: var(--light-green);
 }
 
-#contact-btn img {
-    transition: transform 0.5s ease-in-out;
+#contact-btn i {
+    transition:  0.5s ease-in-out;
+    font-size: 20px;
 }
 
-#contact-btn:hover img {
+#contact-btn:hover i {
+    color: var(--black);
     transform: scale(1.2) rotate(-10deg);
 }
 
@@ -251,5 +254,4 @@
     }
 
 }
-
 
