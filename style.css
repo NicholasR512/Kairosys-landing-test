@@ -1,3 +1,4 @@
+/* Page Colors */
 :root{
     --main-blue: #051650;
     --dark-green: #3D7068;
@@ -8,6 +9,7 @@
     --black: black;
 }
 
+/* Styles Throughout Page */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,23 +17,24 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Start Of Nav Styles */
 .nav-section {
     top: 0;
     position: sticky;
     background-color: var(--white);
     opacity: 95%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
-    /* Add after scroll */
-    /* box-shadow: 0px 15px 10px -15px black; */ 
+    box-shadow: 0px 10px 8px -15px var(--black);
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 18vw;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .logo {
@@ -49,20 +52,94 @@
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 100px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--main-blue);
-    font-size: 1.25rem
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.1s ease-in-out;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
 }
 
-.nav-contact a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: white;
-    padding: 5px 15px 5px 15px;
-    background-color: var(--dark-green);
-    border-radius: 30px;
+.nav-links a:hover {
+    color: var(--main-blue);
+    background-color: rgb(247, 249, 252);
 }
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#contact-btn{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white);
+    padding: 10px 25px 10px 25px;
+    background-color: var(--main-blue);
+    border-radius: 35px;
+    transition: all .5s ease-in-out;
+}
+
+#contact-btn:hover {
+    cursor: pointer;
+   /* box-shadow: var(--main-blue) 0px 0px 40px; */
+
+}
+
+
+/* New hamburger styles for a perfect X */
+.hamburger {
+    width: 30px;
+    height: 24px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Toggle state to form an X */
+.hamburger.open .line:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+} 
+/* End Of Nav Styles */
