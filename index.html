@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,46 +8,72 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="main.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
-    <section class="nav-section">
+    <header class="nav-section">
         <nav class="navbar">
             <div class="logo">
-                <a href="#"><img src="imgs/Kairosys Logo.png" alt="Kairosys logo" width="50"></a>
-                <a href="#">KairoSys</a>
+                <a href="#"><img src="imgs/Kairosys_Logo-removebg-preview.png" alt="KairoSys logo"></a>
+                <a href="#" class="logo-text">KairoSys</a>
             </div>
+
             <div class="nav-links-container">
                 <div class="nav-links">
-                    <a href="#">Product</a>
-                    <a href="#">Solution</a>
+                    <div class="dropdown">
+                        <a href="#">Product <i class="fa fa-chevron-down arrow"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Overview</a>
+                            <a href="#">Features</a>
+                            <a href="#">Integrations</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#">Solution <i class="fa fa-chevron-down arrow"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">By Industry</a>
+                            <a href="#">By Role</a>
+                        </div>
+                    </div>
                     <a href="#">Pricing</a>
+                    <a href="#">Something</a>
                 </div>
-            </div>   
+            </div>
+
             <div class="right-nav">
-                <a href="#" class="contact-btn" id="contact-btn">Contact<i class="fa fa-envelope"></i></a>
-                <div class="hamburger">
+                <a href="#" class="contact-btn" id="contact-btn">
+                    <span class="contact-text">Schedule A Demo</span>
+                    <span class="icon-wrapper">
+                        <i id="closed" class="fa fa-envelope"></i>
+                        <i id="open" class="fa fa-envelope-open"></i>
+                    </span>
+                </a>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                     <div class="line" id="l1"></div>
                     <div class="line" id="l2"></div>
                     <div class="line" id="l3"></div>
-                </div>
+                </button>
             </div>
         </nav>
-    </section>
+    </header>
     <div class="nav-overlay"></div>
-    
 
     <section class="hero-section">
         <div class="hero-content">
-        <h1>Welcome to KairoSys!</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque rerum deserunt asperiores! Perferendis explicabo nam qui exercitationem quos eius, ipsam maiores eum quasi voluptate iusto architecto dolore, illum ipsa.
+            <h1>Welcome to KairoSys!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque rerum deserunt asperiores! Perferendis explicabo nam qui exercitationem quos eius, ipsam maiores eum quasi voluptate iusto architecto dolore, illum ipsa.</p>
             <a href="#" class="hero-btn">Get Started</a>
         </div>
         <div class="hero-images">
             <div class="circle"></div>
-            <div class="circle">
+            <div class="circle"></div>
+        </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>

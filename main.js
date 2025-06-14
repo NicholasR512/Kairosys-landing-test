@@ -1,14 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinksContainer = document.querySelector(".nav-links-container");
-    const overlay = document.querySelector(".nav-overlay");
+const hamburger = document.querySelector(".hamburger");
+const navLinksContainer = document.querySelector(".nav-links-container");
+const overlay = document.querySelector(".nav-overlay");
 
-    function toggleMenu() {
-        hamburger.classList.toggle("open");
-        navLinksContainer.classList.toggle("open");
-        overlay.classList.toggle("active");
-    }
+// Toggle ARIA state on hamburger
+hamburger.setAttribute("aria-expanded", "false");
 
-    hamburger.addEventListener("click", toggleMenu);
-    overlay.addEventListener("click", toggleMenu); // closes on overlay click
+function toggleMenu() {
+    const isOpen = !navLinksContainer.classList.contains("open");
+    hamburger.classList.toggle("open");
+    navLinksContainer.classList.toggle("open");
+    overlay.classList.toggle("active");
+    hamburger.setAttribute("aria-expanded", String(isOpen));
+}
+
+hamburger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+
+// Close menu when a link is clicked (mobile)
+document.querySelectorAll('.nav-links a').forEach((link) => {
+    link.addEventListener('click', () => {
+        if (navLinksContainer.classList.contains('open')) toggleMenu();
+    });
 });
