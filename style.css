@@ -207,7 +207,7 @@
     transform: translateY(-10.5px) rotate(-45deg);
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 987px) {
     .hamburger {
         display: flex;
     }
