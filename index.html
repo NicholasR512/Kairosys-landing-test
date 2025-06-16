@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 </head>
+
 <body>
     <header class="nav-section">
         <nav class="navbar">
@@ -49,7 +50,7 @@
 
             <div class="right-nav">
                 <a href="#" class="contact-btn" id="contact-btn">
-                    <span class="contact-text">Schedule A Demo</span>
+                    <span class="contact-text">Schedule Demo</span>
                     <span class="icon-wrapper">
                         <i id="closed" class="fa fa-envelope"></i>
                         <i id="open" class="fa fa-envelope-open"></i>
@@ -64,90 +65,40 @@
         </nav>
     </header>
     <div class="nav-overlay"></div>
+   <section class="hero-section">
+  <!-- Abstract SVG Shape Layer (not a blur) -->
+  <svg class="hero-svg-shape" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#EA9E8D" opacity="0.25" d="M0,320 C200,450 600,200 800,350 L800,600 L0,600 Z"></path>
+  </svg>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to KairoSys!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque rerum deserunt asperiores! Perferendis explicabo nam qui exercitationem quos eius, ipsam maiores eum quasi voluptate iusto architecto dolore, illum ipsa.</p>
-            <a href="#" class="hero-btn">Get Started</a>
-        </div>
-        <div class="hero-images">
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </section>
-    <section>
-        <h1 class="title">Frequently Asked Question's</h1>
-    
-        <div class="questions-container">
-            <div class="question">
-                <button>
-                    <span>What is PIP and what problem does it solve?</span>
-                    <span class="d-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
-                          <path d="M7 10l5 5 5-5z"/>
-                        </svg>
-                      </span>
-                      
-                </button>
-                <p>PIP (Product Improvement Platform) is an AI-powered tool that transforms fragmented feedback—like adverse events, user complaints, and regulatory data—into actionable design insights for medical devices. It helps teams uncover why device failures happen and how to prevent them before market launch, reducing R&D uncertainty.
-                </p>
-            </div>
-    
-            <div class="question">
-                <button>
-                    <span>
-                        How is PIP different from GenAI platforms like ChatGPT, Claude, or Gemini?
-                        </span>
-                        <span class="d-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
-                              <path d="M7 10l5 5 5-5z"/>
-                            </svg>
-                          </span>
-                          
-                </button>
-                <p>Unlike other AI platforms, PIP is purpose-built for medical device design. It integrates semi-structured regulatory data, unstructured social media content, patent filings, and internal client data to generate tailored design, regulatory, and risk insights. While ChatGPT might answer questions, PIP synthesizes and surfaces critical issues relevant to your device and its market through integrations with essential datasources.
-                </p>
-            </div>
-    
-            <div class="question">
-                <button>
-                    <span>
-                        How is PIP different from tools like Greenlight Guru or Veeva Vault QMS?
-                        </span>
-                        <span class="d-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
-                              <path d="M7 10l5 5 5-5z"/>
-                            </svg>
-                          </span>
-                          
-                </button>
-                <p>PIP focuses on the early-stage design and ideation phase—long before quality management or compliance documentation. It’s not just a documentation platform. It’s an intelligence system that helps R&D teams understand what to build and why, based on user needs, known failures, and competitor innovations.
-                </p>
-            </div>
-    
-            <div class="question">
-                <button>
-                    <span>Is the data I upload visible to other clients?</span>
-                    <span class="d-arrow">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
-                          <path d="M7 10l5 5 5-5z"/>
-                        </svg>
-                      </span>
-                      
-                </button>
-                <p>No. Each client’s data is completely isolated. Internal data is never shared or visible to others. Privacy and security are core design principles.
-</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- external js-->
-    <script src="main.js"></script>
+  <!-- Hero Content -->
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Insight. Innovation. Impact.</h1>
+      <p>
+        PIP transforms fragmented feedback — like FDA MAUDE reports, Reddit posts, and patents — into AI-powered design improvements for medical devices.
+      </p>
+      <a href="#" class="cta-btn"><i class="fa fa-rocket"></i> Launch a Demo</a>
+    </div>
+
+    <div class="hero-graphic">
+      <div class="graphic-layers">
+        <img src="imgs/pip-hero.png" alt="PIP AI Medical Illustration">
+        <div class="animated-ring ring1"></div>
+        <div class="animated-ring ring2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
     <script src="main.js"></script>
 </body>
-<script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="m4y2ugTnxUhkWKG05pxOs";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
+
 </html>
