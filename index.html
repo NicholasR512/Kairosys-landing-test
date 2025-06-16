@@ -8,17 +8,40 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
+<script>
+    AOS.init();
+</script>
 
 <body>
+    <div id="my-background" style="width: 100%;"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#my-background",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xffffff,
+            color: 0xEA9E8D,
+            showDots: true,
+            maxDistance: 17
+        });
+    </script>
     <header class="nav-section">
         <nav class="navbar">
             <div class="logo">
@@ -65,31 +88,127 @@
         </nav>
     </header>
     <div class="nav-overlay"></div>
-   <section class="hero-section">
-  <!-- Abstract SVG Shape Layer (not a blur) -->
-  <svg class="hero-svg-shape" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-    <path fill="#EA9E8D" opacity="0.25" d="M0,320 C200,450 600,200 800,350 L800,600 L0,600 Z"></path>
-  </svg>
+    <section class="hero-section">
 
-  <!-- Hero Content -->
-  <div class="hero-container">
-    <div class="hero-text">
-      <h1>Insight. Innovation. Impact.</h1>
-      <p>
-        PIP transforms fragmented feedback — like FDA MAUDE reports, Reddit posts, and patents — into AI-powered design improvements for medical devices.
-      </p>
-      <a href="#" class="cta-btn"><i class="fa fa-rocket"></i> Launch a Demo</a>
-    </div>
+        <div class="hero">
+            <h1 class="hero-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="000">Insight. Innovation.
+                Impact.</h1>
+            <h3 class="hero-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Turn device-feedback
+                into design-ready insights—before your next recall</h3>
+            <a href="#" class="hero-cta" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Schedule Demo
+                <i class="	fas fa-angle-right"></i></a>
+            <img src="imgs/Screenshot 2025-06-16 at 10.42.49 AM.png" alt="" class="hero-demo" data-aos="fade-up"
+                data-aos-duration="1000" data-aos-delay="300">
+        </div>
+    </section>
 
-    <div class="hero-graphic">
-      <div class="graphic-layers">
-        <img src="imgs/pip-hero.png" alt="PIP AI Medical Illustration">
-        <div class="animated-ring ring1"></div>
-        <div class="animated-ring ring2"></div>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="features-section">
+        <h2 class="feature-title">Key Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fa fa-search"></i>
+                <h3>AI-Powered Analysis</h3>
+                <p>Transform raw device feedback into actionable insights instantly.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa fa-search"></i>
+                <h3>Multi-Source Input</h3>
+                <p>Analyze data from MAUDE, Reddit, patents, and internal files together.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa fa-search"></i>
+                <h3>Design-Ready Output</h3>
+                <p>Receive real recommendations on what to build—and what to avoid.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa fa-search"></i>
+                <h3>Secure & Isolated</h3>
+                <p>Keep your sensitive data siloed—never shared with other clients.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+        <h1 class="title">Frequently Asked Question's</h1>
+
+        <div class="questions-container">
+            <div class="question">
+                <button>
+                    <span>What is PIP and what problem does it solve?</span>
+                    <span class="d-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </span>
+
+                </button>
+                <p>PIP (Product Improvement Platform) is an AI-powered tool that transforms fragmented feedback—like
+                    adverse events, user complaints, and regulatory data—into actionable design insights for medical
+                    devices. It helps teams uncover why device failures happen and how to prevent them before market
+                    launch, reducing R&D uncertainty.
+                </p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>
+                        How is PIP different from GenAI platforms like ChatGPT, Claude, or Gemini?
+                    </span>
+                    <span class="d-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </span>
+
+                </button>
+                <p>Unlike other AI platforms, PIP is purpose-built for medical device design. It integrates
+                    semi-structured regulatory data, unstructured social media content, patent filings, and internal
+                    client data to generate tailored design, regulatory, and risk insights. While ChatGPT might answer
+                    questions, PIP synthesizes and surfaces critical issues relevant to your device and its market
+                    through integrations with essential datasources.
+                </p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>
+                        How is PIP different from tools like Greenlight Guru or Veeva Vault QMS?
+                    </span>
+                    <span class="d-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </span>
+
+                </button>
+                <p>PIP focuses on the early-stage design and ideation phase—long before quality management or compliance
+                    documentation. It’s not just a documentation platform. It’s an intelligence system that helps R&D
+                    teams understand what to build and why, based on user needs, known failures, and competitor
+                    innovations.
+                </p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>Is the data I upload visible to other clients?</span>
+                    <span class="d-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" viewBox="0 0 24 24">
+                            <path d="M7 10l5 5 5-5z" />
+                        </svg>
+                    </span>
+
+                </button>
+                <p>No. Each client’s data is completely isolated. Internal data is never shared or visible to others.
+                    Privacy and security are core design principles.
+                </p>
+            </div>
+        </div>
+    </section>
+    <button id="theme-toggle" class="theme-toggle">
+        <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
 
 
 
@@ -97,8 +216,17 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="main.js" defer></script>
 
-    <script src="main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+<script>
+    (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "m4y2ugTnxUhkWKG05pxOs"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+</script>
 
 </html>
