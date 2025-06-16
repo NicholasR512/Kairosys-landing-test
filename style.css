@@ -283,3 +283,108 @@
         font-weight: 600;
     }
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #030101;
+    background-color: #faf8f8 ;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-decoration: none;     
+  border-bottom: none;      
+}
+
+
+.questions-container {
+    max-width: 800px;
+    margin: 100px auto 120px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.question {
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.question button {
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 24px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.question button:hover {
+    background-color: #f8f8f8;
+}
+
+.question p {
+    font-size: 18px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.6;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    padding: 0 24px;
+    color: #333;
+}
+
+.question p.show {
+    max-height: 500px;
+    opacity: 1;
+    padding: 0 24px 24px 24px;
+}
+
+.d-arrow {
+    transition: transform 0.3s ease;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.question button .d-arrow.rotate {
+    transform: rotate(180deg);
+}
+.d-arrow svg.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+
+
+/* Paragraph open state */
+.question p.show {
+    max-height: 500px;
+    opacity: 1;
+    padding: 15px 15px 30px 15px;
+}

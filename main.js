@@ -22,3 +22,15 @@ document.querySelectorAll('.nav-links a').forEach((link) => {
         if (navLinksContainer.classList.contains('open')) toggleMenu();
     });
 });
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.querySelector('.d-arrow svg');
+
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
