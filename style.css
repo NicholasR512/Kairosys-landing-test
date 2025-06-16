@@ -18,7 +18,7 @@
   --main-blue: #6279B8;
   --light-blue: #051650;
   --gray: #F9F9F9; 
-  --light-gray: #4f4f4f;
+  --light-gray: rgb(17, 17, 17);
   --dark-green: #eefbf2;
   --light-green: #3D7068;
   --logo-b: 10000%; /* new accent */
@@ -415,6 +415,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     color: var(--dark-green);
+    padding-bottom: 4rem;
 }
 
 .features {
@@ -435,52 +436,34 @@ body {
     padding: 2rem 1rem;
     flex: 1 1 calc(25% - 2rem);
     text-align: start;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    /*box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);*/
     border-color: rgb(215, 214, 214);
     border-style: solid;
     border-width: 1px;
     position: relative;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease-in-out;
 }
-
-.feature-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    0deg, 
-    transparent, 
-    transparent 30%, 
-    rgba(61, 112, 104, 0.4)
-  );
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-
 .feature-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(61, 112, 104,0.9);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.feature-card:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
-}
+
 
 .feature-card i {
-    stroke-width: 7px;
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
     padding: .5rem;  
     background-color: var(--light-gray);
     border-radius: 50%;
     border-style: solid;
-    border-width: 1px;
-    border-color: gray;
+    border-width: 1.5px;
+    border-color: var(--dark-green);
     margin-bottom: 1rem;
+    color: var(--black);
 }
 
 .feature-card h3 {
@@ -499,7 +482,7 @@ body {
 
 /* FAQ Section */
 .title{
-    font-size: 50px;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 40px;
@@ -564,7 +547,7 @@ body {
 
 .d-arrow {
     transition: transform 0.3s ease;
-    background-color: var(--black);
+    background-color: var(--main-blue);
     color: var(--white);
     border-radius: 50%;
     width: 36px;
