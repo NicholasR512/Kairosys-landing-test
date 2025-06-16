@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
+
 <body>
     <header class="nav-section">
         <nav class="navbar">
@@ -46,7 +47,7 @@
 
             <div class="right-nav">
                 <a href="#" class="contact-btn" id="contact-btn">
-                    <span class="contact-text">Schedule A Demo</span>
+                    <span class="contact-text">Schedule Demo</span>
                     <span class="icon-wrapper">
                         <i id="closed" class="fa fa-envelope"></i>
                         <i id="open" class="fa fa-envelope-open"></i>
@@ -61,19 +62,40 @@
         </nav>
     </header>
     <div class="nav-overlay"></div>
+   <section class="hero-section">
+  <!-- Abstract SVG Shape Layer (not a blur) -->
+  <svg class="hero-svg-shape" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#EA9E8D" opacity="0.25" d="M0,320 C200,450 600,200 800,350 L800,600 L0,600 Z"></path>
+  </svg>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to KairoSys!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi neque rerum deserunt asperiores! Perferendis explicabo nam qui exercitationem quos eius, ipsam maiores eum quasi voluptate iusto architecto dolore, illum ipsa.</p>
-            <a href="#" class="hero-btn">Get Started</a>
-        </div>
-        <div class="hero-images">
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-    </section>
+  <!-- Hero Content -->
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Insight. Innovation. Impact.</h1>
+      <p>
+        PIP transforms fragmented feedback — like FDA MAUDE reports, Reddit posts, and patents — into AI-powered design improvements for medical devices.
+      </p>
+      <a href="#" class="cta-btn"><i class="fa fa-rocket"></i> Launch a Demo</a>
+    </div>
+
+    <div class="hero-graphic">
+      <div class="graphic-layers">
+        <img src="imgs/pip-hero.png" alt="PIP AI Medical Illustration">
+        <div class="animated-ring ring1"></div>
+        <div class="animated-ring ring2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
     <script src="main.js"></script>
 </body>
+
 </html>
