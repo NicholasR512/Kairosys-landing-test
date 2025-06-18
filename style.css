@@ -335,6 +335,9 @@ body {
         pointer-events: none;
         font-weight: 600;
     }
+    .contact-btn {
+        padding: 5px 10px;
+    }
 }
 /* End Of Nav Styles*/
 
@@ -394,7 +397,7 @@ body {
     transform: translateX(5px);
 }
 
-.hero img {
+.hero video {
     width: 100%;
     height: auto;
     margin-top: 6rem;
