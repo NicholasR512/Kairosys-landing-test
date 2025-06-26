@@ -48,12 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     mouseControls: false,
     touchControls: false,
     gyroControls: false,
-    scale: 1.00,
+    scale: .4,
     scaleMobile: 1.00,
     backgroundColor: 0xffffff,
     color: 0xEA9E8D,
     showDots: true,
-    maxDistance: 17
+    maxDistance: 15
   });
 
   toggleBtn.addEventListener('click', () => {
@@ -70,4 +70,36 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// ...existing code...
+
+// Carousel functionality
+const carouselImgs = [
+  document.getElementById('img-1'),
+  document.getElementById('img-2'),
+  document.getElementById('img-3')
+];
+const carouselBtns = [
+  document.getElementById('cc-1'),
+  document.getElementById('cc-2'),
+  document.getElementById('cc-3')
+];
+
+carouselBtns.forEach((btn, idx) => {
+  btn.addEventListener('click', () => {
+    // Show the selected image, hide others
+    carouselImgs.forEach((img, i) => {
+      img.style.display = i === idx ? 'block' : 'none';
+    });
+    // Update button styles
+    carouselBtns.forEach((b, i) => {
+      if (i === idx) {
+        b.style.backgroundColor = 'var(--main-blue)';
+        b.style.color = 'var(--white)';
+      } else {
+        b.style.backgroundColor = 'transparent';
+        b.style.color = 'var(--main-blue)';
+      }
+    });
+  });
+});
 
