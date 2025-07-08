@@ -103,3 +103,7 @@ carouselBtns.forEach((btn, idx) => {
   });
 });
 
+function toggleDetails(header) {
+  const useCase = header.closest('.use-case');
+  useCase.classList.toggle('active');
+}

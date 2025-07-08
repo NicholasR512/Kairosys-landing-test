@@ -575,7 +575,7 @@ body {
     margin-top: 5rem;
     text-align: center;
     font-size: 2.5rem;
-    color: var(--dark-green);
+    color: var(--black);
     padding-bottom: 4rem;
 }
 
@@ -666,7 +666,7 @@ body {
     margin-top: 5rem;
     text-align: center;
     font-size: 2.5rem;
-    color: var(--main-blue);
+    color: var(--black);
     padding-bottom: 4rem;
 }
 
@@ -732,6 +732,265 @@ body {
 }
 
 /* Carousel Section end */
+
+
+body.who-we-serve-body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.who-we-serve-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.who-we-serve-text-center {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.who-we-serve-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.who-we-serve-subtext {
+    font-size: 1.125rem;
+    color: #000000;
+}
+
+.who-we-serve-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .who-we-serve-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.who-we-serve-card {
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.who-we-serve-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.who-we-serve-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ea9e8d;
+}
+
+.who-we-serve-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.who-we-serve-text {
+    color: #718096;
+}
+
+
+
+
+
+
+
+.use-case-explorer {
+    padding: 4rem 1rem;
+    width: 85vw;
+    margin: auto;
+}
+
+
+
+
+.use-case-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+
+
+
+.use-case-intro h2 {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+
+
+
+.use-case-intro p {
+    font-size: 1.125rem;
+    color: #333;
+}
+
+
+
+
+.use-case-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 0 auto;
+}
+
+
+
+
+.use-case {
+    background: #ffffff;
+    border-left: 4px solid #6279b8;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+
+
+
+.use-case.critical {
+    border-left-color: #ea9e8d;
+}
+
+
+
+
+.use-case-title {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #051650;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+
+
+
+.use-case-title:hover {
+    color: #3a6965;
+}
+
+
+
+
+.chevron {
+    display: inline-block;
+    border: solid #6279b8;
+    border-width: 0 2px 2px 0;
+    padding: 5px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    margin-left: auto;
+}
+
+
+
+
+.use-case.active .chevron {
+    transform: rotate(-135deg);
+}
+
+
+
+
+.use-case-content {
+    margin-top: 1rem;
+    display: none;
+}
+
+
+
+
+.use-case.active .use-case-content {
+    display: block;
+}
+
+
+
+
+.use-case-question {
+    font-style: italic;
+    color: #3a3a3a;
+    margin: 0 0 1rem;
+    border-left: 3px solid #c1e4ca;
+    padding-left: 1rem;
+}
+
+
+
+
+.use-case-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.use-case-details li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #222;
+}
+
+
+
+
+.use-case-details li strong {
+    color: #051650;
+}
+
+
+
+
+.dropdown-hint {
+    font-size: 0.875rem;
+    color: #888;
+    margin-top: 0.25rem;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .use-case-explorer {
+        padding: 2rem 1rem 3rem;
+        /* top reduced from 4rem to 2rem, bottom optional */
+        max-width: 1100px;
+        margin: auto;
+    }
+
+
+
+
+    .use-case-title {
+        font-size: 1.1rem;
+    }
+}
+
 
 /* Testimonials Section */
 .testimonials-section {
@@ -836,7 +1095,7 @@ body {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 80px;
-    margin-bottom: 40px;
+    margin-bottom: -40px;
     text-decoration: none;
     border-bottom: none;
 }
@@ -1056,7 +1315,7 @@ body {
     font-weight: 600;
 }
 
-#footer-img{
+#footer-img {
     filter: brightness(10000%);
     width: 50px;
     height: auto;
@@ -1085,4 +1344,8 @@ body {
 
 .footer-left a:hover {
     text-decoration: underline;
+}
+
+.ww-uc-section {
+    background-color: var(--light-gray);
 }
