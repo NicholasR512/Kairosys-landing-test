@@ -17,11 +17,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <script>
     AOS.init();
+</script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
 </script>
 
 <body>
@@ -38,27 +44,27 @@
             <div class="nav-links-container">
                 <div class="nav-links">
                     <div class="dropdown">
-                        <a href="#">Product <i class="fa fa-chevron-down arrow"></i></a>
+                        <a href="#info-section">Product <i class="fa fa-chevron-down arrow"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">Overview</a>
-                            <a href="#">Features</a>
-                            <a href="#">Integrations</a>
+                            <a href="#info-section">Overview</a>
+                            <a href="#features-section">Features</a>
+                            <a href="#carousel-section">Demo</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a href="#">Solution <i class="fa fa-chevron-down arrow"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">By Industry</a>
-                            <a href="#">By Role</a>
+                            <a href="#">Who We Serve</a>
+                            <a href="#">Use Cases</a>
                         </div>
                     </div>
-                    <a href="#">Pricing</a>
-                    <a href="#">Something</a>
+                    <a href="#faq-section">FAQs</a>
+                    <a href="#contact-section">Contact</a>
                 </div>
             </div>
 
             <div class="right-nav">
-                <a href="#" class="contact-btn" id="contact-btn">
+                <a href="#contact-section" class="contact-btn" id="contact-btn">
                     <span class="contact-text">Schedule Demo</span>
                     <span class="icon-wrapper">
                         <i id="closed" class="fa fa-envelope"></i>
@@ -81,120 +87,199 @@
                 Impact.</h1>
             <h3 class="hero-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Turn device-feedback
                 into design-ready insights—before your next recall</h3>
-            <a href="#" class="hero-cta" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Schedule Demo
+            <a href="#contact-section" class="hero-cta" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="200">Schedule Demo
                 <i class="	fas fa-angle-right"></i></a>
-            <video autoplay muted controls loop class="hero-demo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <video autoplay muted controls loop class="hero-demo" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="300">
                 <source src="demo vid.mp4" type="video/mp4">
             </video>
         </div>
     </section>
 
-    <section class="info-section">
-        <h2 class="info-title"></h2>
-        <div class="info-left"></div>
-        <div class="info-right">
-            <--
+    <section class="info-section" id="info-section">
+        <div class="info-container">
+            <h2 class="info-title">Product Overview</h2>
+            <div class="info-content">
+                <div class="info-text">
+                    <div class="info-points">
+                        <div class="info-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Early Failure Detection</h4>
+                                <p>Spot critical device issues before they impact patients by surfacing risk signals
+                                    across regulatory and real-world data.</p>
+                            </div>
+                        </div>
+                        <div class="info-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Unified Feedback Pipeline</h4>
+                                <p>Automatically ingest and synthesize internal reports, FDA filings, social media, and
+                                    patents into one intelligence platform.</p>
+                            </div>
+                        </div>
+                        <div class="info-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Faster, Smarter Design Decisions</h4>
+                                <p>Accelerate innovation by matching failure themes with proven solutions from across
+                                    the industry and IP landscape.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-visual">
+                    <div class="process-diagram">
+                        <div class="process-step">
+                            <div class="step-icon">
+                                <i class="fas fa-upload"></i>
+                            </div>
+                            <h4>Collect</h4>
+                            <p>Aggregate MAUDE reports, Reddit posts, patents, and internal feedback</p>
+                        </div>
+                        <div class="process-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Analyze</h4>
+                            <p>Extract patterns and trends using domain-trained AI</p>
+                        </div>
+                        <div class="process-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovate</h4>
+                            <p>Generate design-ready insights with regulatory and technical context</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="features-section">
+    <section class="features-section" id="features-section">
         <h2 class="feature-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Key Features</h2>
         <div class="features" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <div class="feature-card f1">
                 <i class="fa fa-search"></i>
                 <h3>Automated Issue Extraction</h3>
-                <p>Uses NLP and machine learning to scan unstructured feedback—from FDA MAUDE reports to social
-                    media—and surface recurring failure modes in seconds.</p>
+                <p>Quickly detects recurring problems in unstructured data—like narrative MAUDE reports and Reddit
+                    posts—using NLP tuned for medical devices.</p>
             </div>
             <div class="feature-card f2">
                 <i class="fa fa-link"></i>
-                <h3>Cross-Database Correlation</h3>
-                <p>Instantly correlates issues across regulatory, internal, and public channels (MAUDE, Reddit, internal
-                    logs) so you get a comprehensive, 360° view of device risks.</p>
+                <h3>Cross-Source Risk Mapping</h3>
+                <p>Connects the dots between internal complaints, regulatory filings, and public sentiment to uncover
+                    hidden risk patterns and emerging concerns.</p>
             </div>
             <div class="feature-card f3">
                 <i class="fa fa-lightbulb" style="font-size: 20px"></i>
-                <h3>Patent-Driven Solution Mining</h3>
-                <p>Searches USPTO and scientific literature to uncover proven design fixes—helping you leapfrog
-                    trial-and-error and accelerate your R&D cycle</p>
+                <h3>Patent-Driven Design Discovery</h3>
+                <p>Identifies relevant prior art and published solutions—so your team can move faster with confidence
+                    and regulatory alignment.</p>
             </div>
             <div class="feature-card f4">
                 <i class="fa fa-bar-chart"></i>
-                <h3>Traceable Insights & Reporting</h3>
-                <p>Every recommendation links back to its source, with exportable traceability matrices and
-                    compliance-ready reports that make audits and approvals a breeze.</p>
+                <h3>Traceable Reports & Templates</h3>
+                <p>Export insights into structured documentation—like traceability matrices and user needs reports—with
+                    full source references for compliance and audits.</p>
             </div>
         </div>
-
     </section>
 
-    <section class="carousel-section" data-aos="fade-up" data-aos-duration="1000" >
-        <h2 class="demo-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">View Product</h2>
-        <div class="carousel-container" data-aos="fade-up" data-aos-duration="1000">
-            <img class="carousel-img" id="img-1" src="imgs/Screenshot 2025-06-26 at 11.40.19 AM.png" alt="">
-            <img class="carousel-img" id="img-2" src="imgs/Screenshot 2025-06-16 at 10.42.49 AM.png" alt="" width="100%">
-            <img class="carousel-img" id="img-3" src="imgs/Screenshot 2025-06-26 at 11.40.19 AM.png" alt="" width="100%">
+
+    <section class="wws-section">
+        <h2 class="wws-title"></h2>
+        <!-- Style TBD  -->
+    </section>
+
+    <section class="carousel-section" id="carousel-section" data-aos="fade-up" data-aos-duration="1000">
+        <br>
+        <br>
+        <h2 class="demo-title">View Product</h2>
+        <div class="carousel-container">
+            <img class="carousel-img" id="img-1" src="imgs/demo 1.png" alt="">
+            <img class="carousel-img" id="img-2" src="imgs/demo 2.png" alt="" width="100%">
+            <img class="carousel-img" id="img-3" src="imgs/demo 3.png" alt="" width="100%">
         </div>
-        <div class="carousel-controls" data-aos="fade-up" data-aos-duration="1000">
+        <div class="carousel-controls">
             <button id="cc-1">Input</button>
-            <button id="cc-2">Input</button>
+            <button id="cc-2">Upload</button>
             <button id="cc-3">Results</button>
         </div>
     </section>
 
-   <!-- Testimonials Section -->
-<section class="testimonials-section">
-  <h2 class="testimonials-title" data-aos="fade-up" data-aos-duration="1000">Testimonials</h2>
-  <div class="testimonials" data-aos="fade-up" data-aos-duration="1000">
-    <div class="testimonial-card">
-      <div class="testimonial-quote-mark">
-        <i class="fa fa-quote-left"></i>
-      </div>
-      <p class="testimonial-quote">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, doloribus? Amet, labore hic similique asperiores eum nobis quidem nam deleniti! Laborum dolor porro autem animi ex quia ea, nisi veritatis.
-      </p>
-      <div class="testimonial-user">
-        <img src="imgs/user1.jpg" alt="User headshot" class="testimonial-avatar">
-        <div>
-          <div class="testimonial-name">First Last</div>
-          <div class="testimonial-role">Job Title, <span class="testimonial-company">Company Name</span></div>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" style="display: none;">
+        <h2 class="testimonials-title" data-aos="fade-up" data-aos-duration="1000">Testimonials</h2>
+        <div class="testimonials" data-aos="fade-up" data-aos-duration="1000">
+            <div class="testimonial-card">
+                <div class="testimonial-quote-mark">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="testimonial-quote">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, doloribus? Amet, labore hic
+                    similique asperiores eum nobis quidem nam deleniti! Laborum dolor porro autem animi ex quia ea, nisi
+                    veritatis.
+                </p>
+                <div class="testimonial-user">
+                    <img src="imgs/user1.jpg" alt="User headshot" class="testimonial-avatar">
+                    <div>
+                        <div class="testimonial-name">First Last</div>
+                        <div class="testimonial-role">Job Title, <span class="testimonial-company">Company Name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote-mark">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="testimonial-quote">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, doloribus? Amet, labore hic
+                    similique asperiores eum nobis quidem nam deleniti! Laborum dolor porro autem animi ex quia ea, nisi
+                    veritatis.
+                </p>
+                <div class="testimonial-user">
+                    <img src="imgs/user2.jpg" alt="User headshot" class="testimonial-avatar">
+                    <div>
+                        <div class="testimonial-name">First Last</div>
+                        <div class="testimonial-role">Job Title, <span class="testimonial-company">Company Name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote-mark">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <p class="testimonial-quote">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, doloribus? Amet, labore hic
+                    similique asperiores eum nobis quidem nam deleniti! Laborum dolor porro autem animi ex quia ea, nisi
+                    veritatis.
+                </p>
+                <div class="testimonial-user">
+                    <img src="imgs/company-logo.png" alt="Company logo" class="testimonial-avatar">
+                    <div>
+                        <div class="testimonial-name">First Last</div>
+                        <div class="testimonial-role">Job Title, <span class="testimonial-company">Company Name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-quote-mark">
-        <i class="fa fa-quote-left"></i>
-      </div>
-      <p class="testimonial-quote">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, doloribus? Amet, labore hic similique asperiores eum nobis quidem nam deleniti! Laborum dolor porro autem animi ex quia ea, nisi veritatis.
-      </p>
-      <div class="testimonial-user">
-        <img src="imgs/user2.jpg" alt="User headshot" class="testimonial-avatar">
-        <div>
-          <div class="testimonial-name">First Last</div>
-          <div class="testimonial-role">Job Title, <span class="testimonial-company">Company Name</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="testimonial-quote-mark">
-        <i class="fa fa-quote-left"></i>
-      </div>
-      <p class="testimonial-quote">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, doloribus? Amet, labore hic similique asperiores eum nobis quidem nam deleniti! Laborum dolor porro autem animi ex quia ea, nisi veritatis.
-      </p>
-      <div class="testimonial-user">
-        <img src="imgs/company-logo.png" alt="Company logo" class="testimonial-avatar">
-        <div>
-          <div class="testimonial-name">First Last</div>
-          <div class="testimonial-role">Job Title, <span class="testimonial-company">Company Name</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-    <section>
+    <section id="faq-section" class="faq-section">
+        <br>
+        <br>
         <h2 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Frequently Asked Questions</h2>
 
         <div class="questions-container">
@@ -271,29 +356,60 @@
         </div>
     </section>
     <!-- Contact Form Section -->
-<section class="contact-section">
-  <h2 class="contact-title">Contact Us</h2>
-  <form class="contact-form">
-    <div class="form-row">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-    </div>
-    <div class="form-row">
-      <input type="text" name="company" placeholder="Company">
-      <select name="demo" required>
-        <option value="" disabled selected>Would you like a demo?</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-      </select>
-    </div>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
-</section>
-<!-- End Contact Form Section -->
-    <button id="theme-toggle" class="theme-toggle">
+    <section class="contact-section" id="contact-section" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="contact-title">Contact Us</h2>
+        <form class="contact-form" action="https://api.staticforms.xyz/submit" method="POST">
+            <!-- Required: Your Static Forms API key -->
+            <input type="hidden" name="apiKey" value="sf_34b9k8e142ieckn2f4dnc3bn">
+
+            <!-- Enable reply-to functionality -->
+            <input type="hidden" name="replyTo" value="@">
+            <input type="text" name="honeypot" style="display: none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Your Name *" required>
+                <input type="email" name="email" placeholder="Your Email *" required>
+            </div>
+            <div class="form-row">
+                <input type="text" name="company" placeholder="Company *">
+                <select name="demo" required>
+                    <option value="" disabled selected>Would you like a demo? *</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <textarea name="message" placeholder="Your Message *" rows="5" required></textarea>
+            <!-- <div class="g-recaptcha" data-sitekey="6Lf_fHwrAAAAAOLb2LIIfrpaZxS0MtmtlVkfSGVc"></div> -->
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- End Contact Form Section -->
+    <button id="theme-toggle" class="theme-toggle" style="display: none;">
         <i id="theme-icon" class="fas fa-moon"></i>
     </button>
+
+    <section class="footer-section">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#"><img src="imgs/Kairosys_Logo-removebg-preview.png" alt="Logo" id="footer-img"> </a>
+                <a href="#">KairoSys</a>
+            </div>
+            <div class="footer-links">
+                <div class="footer-left">
+                    <a href="#info-section" class="link-1">Product</a>
+                    <a href="#" class="link-2">Solution</a>
+                    <a href="#faq-section" class="link-3">FAQs</a>
+                    <a href="#contact-section" class="link-4">Contact</a>
+                    <a href="/PRIVACY_POLICY.txt" class="link-5" download>Privacy Policy</a>
+                    <a href="/TERMS_OF_SERVICE.txt" class="link-6" download>Terms of Service</a>
+                </div>
+                <div class="footer-right">
+                    <p>© KairoSys 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     backgroundColor: 0xffffff,
     color: 0xEA9E8D,
     showDots: true,
-    maxDistance: 15
+    maxDistance: 12
   });
 
   toggleBtn.addEventListener('click', () => {
