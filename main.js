@@ -48,12 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
     mouseControls: false,
     touchControls: false,
     gyroControls: false,
-    scale: .4,
+    scale: 1,
     scaleMobile: 1.00,
     backgroundColor: 0xffffff,
     color: 0xEA9E8D,
     showDots: true,
-    maxDistance: 12
+    maxDistance: 12,
+    points: 6
   });
 
   toggleBtn.addEventListener('click', () => {

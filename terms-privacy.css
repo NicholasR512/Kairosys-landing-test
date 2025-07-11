@@ -1,0 +1,81 @@
+:root {
+  --main-blue: #051650;
+  --dark-green: #3D7068;
+  --light-green: #eefbf2;
+  --light-blue: #6279B8;
+  --accent: #EA9E8D;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #4f4f4f;
+  --light-gray: #F9F9F9;
+}
+
+body {
+  background: var(--light-gray);
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.legal-section {
+  padding: 3rem 1.5rem;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: auto;
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.legal-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--main-blue);
+}
+
+.legal-container h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--main-blue);
+}
+
+.legal-container p {
+  line-height: 1.7;
+  margin: 1rem 0;
+  color: var(--gray);
+}
+
+.legal-container ul {
+  margin-left: 1.25rem;
+  padding-left: 0.5rem;
+  line-height: 1.8;
+  color: var(--gray);
+}
+
+.legal-container a {
+  color: var(--main-blue);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.legal-container a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 700px) {
+  .legal-container {
+    padding: 2rem;
+  }
+
+  .legal-container h1 {
+    font-size: 2rem;
+  }
+
+  .legal-container h2 {
+    font-size: 1.25rem;
+  }
+}
