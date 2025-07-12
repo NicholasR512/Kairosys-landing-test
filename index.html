@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KairoSysAI</title>
-    <link rel="icon" type="image/x-icon" href="/imgs/Kairosys_Logo-removebg-preview.png">
+    <title>KairoSys Applied Intelligence</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,41 +49,41 @@
     <header class="nav-section">
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="imgs/Kairosys_Logo-removebg-preview.png" alt="KairoSys logo"></a>
-                <a href="index.html" class="logo-text">KairoSys</a>
+                <a href="/"><img src="imgs/Kairosys_Logo-removebg-preview.png" alt="KairoSys logo"></a>
+                <a href="/" class="logo-text">KairoSys</a>
             </div>
 
             <div class="nav-links-container">
                 <div class="nav-links">
                     <div class="dropdown">
-                        <a href="index.html#info-section">Product <i class="fa fa-chevron-down arrow"></i></a>
+                        <a href="/#info">Product <i class="fa fa-chevron-down arrow"></i></a>
                         <div class="dropdown-content">
-                            <a href="index.html#info-section">Overview</a>
-                            <a href="index.html#features-section">Features</a>
-                            <a href="index.html#demo-section">Demo</a>
+                            <a href="/#info">Overview</a>
+                            <a href="/#features">Features</a>
+                            <a href="/#demo">Demo</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="index.html#who-we-serve-section">Solution <i class="fa fa-chevron-down arrow"></i></a>
+                        <a href="/#who-we-serve">Solution <i class="fa fa-chevron-down arrow"></i></a>
                         <div class="dropdown-content">
-                            <a href="index.html#who-we-serve-section">Who We Serve</a>
-                            <a href="index.html#use-case-explorer">Use Cases</a>
+                            <a href="/#who-we-serve">Who We Serve</a>
+                            <a href="/#use-case-explorer">Use Cases</a>
                         </div>
                     </div>
-                    <a href="index.html#faq-section">FAQs</a>
-                    <div class="dropdown" style="display: none;">
-                        <a href="#who-we-serve-section">About Us <i class="fa fa-chevron-down arrow"></i></a>
+                    <a href="/#faqs">FAQs</a>
+                    <div class="dropdown">
+                        <a href="/research">About Us <i class="fa fa-chevron-down arrow"></i></a>
                         <div class="dropdown-content">
-                            <a href="#who-we-serve-section">Meet The Team</a>
-                            <a href="research.html">Relevant Research</a>
+                            <a href="/team" style="display: none;">Meet The Team</a>
+                            <a href="/research">Relevant Research</a>
                         </div>
                     </div>
-                    <a href="index.html#contact-section">Contact</a>
+                    <a href="/#contact">Contact</a>
                 </div>
             </div>
 
             <div class="right-nav">
-                <a href="index.html#contact-section" class="contact-btn" id="contact-btn">
+                <a href="/#contact" class="contact-btn" id="contact-btn">
                     <span class="contact-text">Schedule Demo</span>
                     <span class="icon-wrapper">
                         <i id="closed" class="fa fa-envelope"></i>
@@ -99,7 +102,7 @@
     <section class="hero-section">
 
         <div class="hero">
-            <h1 class="hero-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="000">Insight. Innovation.
+            <h1 class="hero-head" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="000">Insights, Innovation,
                 Impact.</h1>
             <h3 class="hero-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Turn device-feedback
                 into design-ready insights—before your next recall</h3>
@@ -113,7 +116,7 @@
         </div>
     </section>
 
-    <section class="info-section" id="info-section">
+    <section class="info-section" id="info">
         <div class="info-container">
             <h2 class="info-title">Product Improvement Platform (PIP) Overview</h2>
             <div class="info-content">
@@ -180,7 +183,7 @@
         </div>
     </section>
 
-    <section class="features-section" id="features-section">
+    <section class="features-section" id="features">
         <h2 class="feature-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Key Features</h2>
         <div class="features" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
             <div class="feature-card f1">
@@ -211,7 +214,7 @@
     </section>
 
 
-    <section class="demo-section" id="demo-section" data-aos="fade-up" data-aos-duration="1000">
+    <section class="demo-section" id="demo" data-aos="fade-up" data-aos-duration="1000">
         <br>
         <br>
         <h2 class="demo-title">View Product</h2>
@@ -231,7 +234,7 @@
         <br>
 
         <body class="who-we-serve-body">
-            <section class="who-we-serve-section" id="who-we-serve-section" data-aos="fade-down">
+            <section class="who-we-serve-section" id="who-we-serve" data-aos="fade-down">
                 <div class="who-we-serve-text-center">
                     <h2 class="who-we-serve-heading">Who We Serve</h2>
                     <p class="who-we-serve-subtext">
@@ -343,7 +346,7 @@
             </section>
     </section>
     <!-- Testimonials Section -->
-    <section class="testimonials-section" style="display: none;">
+    <section class="testimonials-section" id="testimonials" style="display: none;">
         <h2 class="testimonials-title" data-aos="fade-up" data-aos-duration="1000">Testimonials</h2>
         <div class="testimonials" data-aos="fade-up" data-aos-duration="1000">
             <div class="testimonial-card">
@@ -409,7 +412,7 @@
         </div>
     </section>
 
-    <section id="faq-section" class="faq-section">
+    <section id="faqs" class="faq-section">
         <br>
         <br>
         <h2 class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Frequently Asked Questions
@@ -493,7 +496,7 @@
         </div>
     </section>
     <!-- Contact Form Section -->
-    <section class="contact-section" id="contact-section" data-aos="fade-up" data-aos-duration="1000">
+    <section class="contact-section" id="contact" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="contact-title">Contact Us</h2>
         <form class="contact-form" action="https://api.staticforms.xyz/submit" method="POST">
             <!-- Required: Your Static Forms API key -->
@@ -526,51 +529,51 @@
         <i id="theme-icon" class="fas fa-moon"></i>
     </button>
 
-     <section class="footer-section">
+    <section class="footer-section">
         <div class="footer-container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="imgs/Kairosys_Logo-removebg-preview.png" alt="Logo" id="footer-img">
                     </a>
-                    <a href="index.html">KairoSys</a>
+                    <a href="/">KairoSys Applied Intelligence</a>
                 </div>
 
                 <div class="footer-links">
                     <div class="footer-col">
                         <h5>Product</h5>
-                        <a href="index.html#info-section" class="footer-tail-link">Overview</a>
-                        <a href="index.html#features-section" class="footer-tail-link">Features</a>
-                        <a href="index.html#demo-section" class="footer-tail-link">Demo</a>
+                        <a href="/#info" class="footer-tail-link">Overview</a>
+                        <a href="/#features" class="footer-tail-link">Features</a>
+                        <a href="/#demo" class="footer-tail-link">Demo</a>
                     </div>
                     <div class="footer-col">
                         <h5>Solution</h5>
-                        <a href="index.html#who-we-serve-section" class="footer-tail-link">Who We Serve</a>
-                        <a href="index.html#use-case-explorer" class="footer-tail-link">Use Cases</a>
+                        <a href="/#who-we-serve" class="footer-tail-link">Who We Serve</a>
+                        <a href="/#use-case-explorer" class="footer-tail-link">Use Cases</a>
                     </div>
                     <div class="footer-col">
                         <h5>FAQs</h5>
-                        <a href="index.html#faq-section" class="footer-tail-link">Common Questions</a>
+                        <a href="/#faqs" class="footer-tail-link">Common Questions</a>
                     </div>
                     <div class="footer-col">
                         <h5>Contact</h5>
-                        <a href="index.html#contact-section" class="footer-tail-link">Schedule Demo</a>
+                        <a href="/#contact" class="footer-tail-link">Schedule Demo</a>
                     </div>
-                    <div class="footer-col" style="display: none;">
+                    <div class="footer-col">
                         <h5>About Us</h5>
-                        <a href="#" class="footer-tail-link">Meet The Team</a>
-                        <a href="research.html" class="footer-tail-link">Relevant Research</a>
+                        <a href="/team" class="footer-tail-link" style="display: none;">Meet The Team</a>
+                        <a href="/research" class="footer-tail-link">Relevant Research</a>
                     </div>
                     <div class="footer-col">
                         <h5>Legal</h5>
-                        <a href="privacy.html" class="footer-tail-link">Privacy Policy</a>
-                        <a href="terms.html" class="footer-tail-link">Terms of Service</a>
+                        <a href="/privacy" class="footer-tail-link">Privacy Policy</a>
+                        <a href="/terms" class="footer-tail-link">Terms of Service</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-right">
-                <p>© KairoSys 2025</p>
+                <p>© 2025 KairoSys Applied Intelligence LLC</p>
             </div>
         </div>
     </section>
