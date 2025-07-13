@@ -383,6 +383,18 @@ body {
         opacity: 1;
         pointer-events: auto;
     }
+
+    .arrow {
+        transition: transform none;
+    }
+
+    .dropdown:hover .arrow {
+    transform: rotate(0deg);
+    }
+
+    .arrow {
+        transform: rotate(0deg);
+    }
 }
 
 
