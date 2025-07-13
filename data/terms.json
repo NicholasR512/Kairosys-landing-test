@@ -1,0 +1,134 @@
+[
+  {
+    "term": "510(k)",
+    "definition": "A premarket submission to the FDA demonstrating a device is safe and effective by comparing it to a legally marketed device.",
+    "relation": "PIP can cross-reference 510(k) summaries to validate design intentions and outcomes.",
+    "category": "medical",
+    "link": "https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k"
+  },
+  {
+    "term": "Adverse Event",
+    "definition": "An undesirable experience associated with the use of a medical product in a patient.",
+    "relation": "PIP identifies and categorizes adverse events from MAUDE and social media sources.",
+    "category": "medical",
+    "link": "https://www.ncbi.nlm.nih.gov/books/NBK558963/"
+  },
+  {
+    "term": "Design Input",
+    "definition": "The physical and performance requirements of a device that are used as a basis for device design.",
+    "relation": "PIP supports refining design inputs by surfacing real-world issues from feedback sources.",
+    "category": "medical",
+    "link": "https://www.fda.gov/media/116762/download"
+  },
+  {
+    "term": "Downvote",
+    "definition": "A Reddit feature that signals disapproval or irrelevance, decreasing a post's visibility.",
+    "relation": "PIP can filter out heavily downvoted content to surface higher-quality signals.",
+    "category": "reddit",
+    "link": "https://support.reddithelp.com/hc/en-us/articles/7419626610708-What-are-upvotes-and-downvotes"
+  },
+  {
+    "term": "Failure Mode",
+    "definition": "A specific way in which a medical device can fail, such as battery depletion or signal loss.",
+    "relation": "PIP categorizes failure modes to identify recurring problems in devices.",
+    "category": "medical",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10229026/"
+  },
+  {
+    "term": "Failure Trend",
+    "definition": "The pattern or increase in a specific type of device failure over time.",
+    "relation": "PIP visualizes failure trends to prioritize areas needing redesign or investigation.",
+    "category": "medical",
+    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9778633/"
+  },
+  {
+    "term": "Form 3500A",
+    "definition": "The FDA\u2019s MedWatch form used by manufacturers to report adverse events involving medical devices.",
+    "relation": "PIP analyzes Form 3500A narrative sections to extract trends and failure themes.",
+    "category": "medical",
+    "link": "https://www.fda.gov/safety/medical-product-safety-information/medwatch-forms-fda-safety-reporting"
+  },
+  {
+    "term": "Freedom to Operate",
+    "definition": "The ability to develop, make, and sell products without legal liabilities from others\u2019 patents.",
+    "relation": "PIP analyzes patents to assess the freedom to operate for new device concepts.",
+    "category": "patent",
+    "link": "https://www.wipo.int/documents/d/tisc/docs-en-tisc-toolkit-freedom-to-operate-description.pdf"
+  },
+  {
+    "term": "Google Patents",
+    "definition": "A searchable interface for global patent databases, powered by Google.",
+    "relation": "PIP uses Google Patents to review similar designs and identify overlapping technology.",
+    "category": "patent",
+    "link": "https://library.bath.ac.uk/patents/google"
+  },
+  {
+    "term": "MAUDE",
+    "definition": "The Manufacturer and User Facility Device Experience is a database maintained by the FDA that contains medical device reports of adverse events.",
+    "relation": "PIP analyzes MAUDE to identify device failure trends and assess regulatory risks.",
+    "category": "medical",
+    "link": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfmaude/search.cfm"
+  },
+  {
+    "term": "Narrative Analysis",
+    "definition": "A method of extracting insights from qualitative text data by identifying themes and trends in written reports.",
+    "relation": "PIP performs narrative analysis on MAUDE and social media complaints to group similar issues.",
+    "link": "https://dovetail.com/research/narrative-analysis/"
+  },
+  {
+    "term": "Patent",
+    "definition": "A legal right that grants an inventor exclusive rights to a new, useful, and non-obvious invention for a period of time.",
+    "relation": "PIP checks patents for competitive analysis and freedom-to-operate.",
+    "category": "patent",
+    "link": "https://www.uspto.gov/patents/basics"
+  },
+  {
+    "term": "PubMed",
+    "definition": "A search engine maintained by the National Library of Medicine for biomedical and life sciences literature.",
+    "relation": "PIP may incorporate PubMed sources for clinical evidence validation.",
+    "category": "medical",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/about/"
+  },
+  {
+    "term": "Reddit",
+    "definition": "A social media platform with communities for discussing countless topics, structured around upvoting and downvoting posts and comments.",
+    "relation": "PIP monitors Reddit to detect early user-reported issues with medical devices.",
+    "category": "reddit",
+    "link": "https://support.reddithelp.com/hc/en-us/articles/204511479-What-is-Reddit"
+  },
+  {
+    "term": "Root Cause",
+    "definition": "The fundamental reason a failure occurs, identified through structured analysis like FMEA.",
+    "relation": "PIP enables identification of root causes by organizing adverse event narratives and failure modes.",
+    "category": "medical",
+    "link": "https://www.patientsafety.va.gov/professionals/onthejob/rca.asp"
+  },
+  {
+    "term": "Signal Detection",
+    "definition": "A technique in post-market surveillance used to detect new or rare safety concerns from large datasets.",
+    "relation": "PIP uses signal detection to flag potential risks earlier than traditional reports.",
+    "category": "medical",
+    "link": "https://who-umc.org/signal-work/what-is-a-signal/"
+  },
+  {
+    "term": "Signal Prioritization",
+    "definition": "The process of ranking safety signals based on severity, frequency, and novelty.",
+    "relation": "PIP prioritizes potential issues so teams can focus on the highest-risk problems first.",
+    "category": "medical",
+    "link": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/signal-management"
+  },
+  {
+    "term": "Subreddit",
+    "definition": "A user-created community on Reddit focused on a specific topic, like r/AskDocs or r/medicaldevices.",
+    "relation": "PIP narrows monitoring to specific subreddits relevant to medical device safety.",
+    "category": "reddit",
+    "link": "https://support.reddithelp.com/hc/en-us/articles/204533569-What-are-communities-or-subreddits"
+  },
+  {
+    "term": "Upvote",
+    "definition": "An action on Reddit that shows agreement or approval, pushing content higher in visibility.",
+    "relation": "PIP considers upvoted posts more impactful when analyzing feedback trends.",
+    "category": "reddit",
+    "link": "https://support.reddithelp.com/hc/en-us/articles/7419626610708-What-are-upvotes-and-downvotes"
+  }
+]

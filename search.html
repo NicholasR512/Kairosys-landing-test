@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Search Glossary</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/terms-privacy.css">
+    <link rel="stylesheet" href="styles/search.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -95,61 +95,24 @@
     </header>
     <div class="nav-overlay"></div>
 
-    <section class="legal-section">
-        <div class="legal-container">
-            <h1>Privacy Policy</h1>
-            <p><strong>Effective Date:</strong> July 2025</p>
+    <section class="search-section">
+        <div class="search-container">
+            <h2 class="search-title">Search Glossary</h2>
+            <p class="search-description">Find definitions and explanations of key terms related to KairoSys Applied Intelligence.</p>
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-bar" name="query" placeholder="Enter a term to search..." required>
+                <select name="filter" id="category-select">
+                    <option value="all">All Categories</option>
+                    <option value="reddit">Reddit</option>
+                    <option value="patent">Patent</option>
+                    <option value="medical">Medical</option>
+                </select>
+            </form>
+        </div>
+        <div class="search-results" id="search-results">
+            <p class="no-results" id="no-results" style="display:none;">No results found. Please try a different term.</p>
 
-            <p>
-                This Privacy Policy explains how KairoSys ("we", "us", or "our") collects, uses, and protects
-                information when you visit our website <strong>KairoSysAI.com</strong>.
-            </p>
-
-            <h2>1. Information We Collect</h2>
-            <p>We collect the following personal information via our contact form:</p>
-            <ul>
-                <li>Your name</li>
-                <li>Email address</li>
-                <li>Company name</li>
-                <li>Message content</li>
-            </ul>
-
-            <h2>2. How We Use Your Information</h2>
-            <p>Your data is used solely for the following purposes:</p>
-            <ul>
-                <li>To respond to demo requests or inquiries</li>
-                <li>To communicate with you about our product</li>
-                <li>To improve the website experience through analytics</li>
-            </ul>
-
-            <h2>3. Third-Party Services</h2>
-            <p>We use the following external services, which may also collect anonymized or personal data:</p>
-            <ul>
-                <li><strong>Google Analytics:</strong> to understand site usage patterns</li>
-                <li><strong>StaticForms:</strong> to securely process and send form submissions</li>
-                <li><strong>Chatbase:</strong> to provide real-time chatbot interaction</li>
-                <li><strong>Google reCAPTCHA:</strong> (currently disabled) used for spam prevention</li>
-            </ul>
-
-            <h2>4. Data Sharing</h2>
-            <p>We do not sell, rent, or share your personal data with third parties except to provide services listed
-                above or as required by law.</p>
-
-            <h2>5. Data Security</h2>
-            <p>We take reasonable measures to protect your information. However, no internet transmission is 100%
-                secure.</p>
-
-            <h2>6. Your Rights</h2>
-            <p>If you wish to request access, correction, or deletion of your data, please contact us at <a
-                    href="mailto:kairosys.ai@gmail.com">kairosys.ai@gmail.com</a>.</p>
-
-            <h2>7. Changes to This Policy</h2>
-            <p>We may update this Privacy Policy periodically. Updates will be reflected on this page with a new
-                effective date.</p>
-
-            <h2>8. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, contact us at <a
-                    href="mailto:kairosys.ai@gmail.com">kairosys.ai@gmail.com</a>.</p>
+            
         </div>
     </section>
 
@@ -205,10 +168,12 @@
     </section>
 
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/search.js"></script>
 
     <script>
         (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "m4y2ugTnxUhkWKG05pxOs"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
     </script>
+
 
 </body>
 

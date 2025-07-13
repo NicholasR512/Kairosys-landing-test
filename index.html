@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -70,7 +70,13 @@
                             <a href="/#use-case-explorer">Use Cases</a>
                         </div>
                     </div>
-                    <a href="/#faqs">FAQs</a>
+                    <div class="dropdown">
+                        <a href="/#faqs">Questions <i class="fa fa-chevron-down arrow"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/#faqs">FAQs</a>
+                            <a href="/search">Search Glossary</a>
+                        </div>
+                    </div>
                     <div class="dropdown">
                         <a href="/research">About Us <i class="fa fa-chevron-down arrow"></i></a>
                         <div class="dropdown-content">
@@ -552,8 +558,9 @@
                         <a href="/#use-case-explorer" class="footer-tail-link">Use Cases</a>
                     </div>
                     <div class="footer-col">
-                        <h5>FAQs</h5>
-                        <a href="/#faqs" class="footer-tail-link">Common Questions</a>
+                        <h5>Questions</h5>
+                        <a href="/#faqs" class="footer-tail-link">FAQs</a>
+                        <a href="/search" class="footer-tail-link">Search Glossary</a>
                     </div>
                     <div class="footer-col">
                         <h5>Contact</h5>
@@ -582,7 +589,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 
     <script>
         AOS.init();
