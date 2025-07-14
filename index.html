@@ -36,12 +36,6 @@
 <script>
     AOS.init();
 </script>
-<script>
-    function onSubmit(token) {
-        document.getElementById("demo-form").submit();
-    }
-</script>
-
 <body>
     <div id="my-background" style="width: 100%;"></div>
 
@@ -504,20 +498,19 @@
     <!-- Contact Form Section -->
     <section class="contact-section" id="contact" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="contact-title">Contact Us</h2>
-        <form class="contact-form" action="https://api.staticforms.xyz/submit" method="POST">
-            <!-- Required: Your Static Forms API key -->
-            <input type="hidden" name="apiKey" value="sf_34b9k8e142ieckn2f4dnc3bn">
-
-            <!-- Enable reply-to functionality -->
-            <input type="hidden" name="replyTo" value="@">
-            <input type="text" name="honeypot" style="display: none" tabindex="-1" autocomplete="off">
-
+        <form class="contact-form" id="contact-form">
+            <input type="hidden" name="accessKey" value="sf_34b9k8e142ieckn2f4dnc3bn">
+            <input type="hidden" name="honeypot" value="">
             <div class="form-row">
                 <input type="text" name="name" placeholder="Your Name *" required>
-                <input type="email" name="email" placeholder="Your Email *" required>
+                <input type="text" name="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Your Email *"/>
             </div>
             <div class="form-row">
                 <input type="text" name="company" placeholder="Company *" required>
+                <input type="text" name="position" placeholder="Position *" required>
+            </div>
+            <div class="form-row">
+                <input type="text" name="products" placeholder="Product(s)/Devices(s) of Interest *" required>
                 <select name="demo" required>
                     <option value="" disabled selected>Would you like a demo? *</option>
                     <option value="yes">Yes</option>
@@ -526,10 +519,59 @@
             </div>
             <textarea name="message" placeholder="Your Message *" rows="5" required></textarea>
             <!-- <div class="g-recaptcha" data-sitekey="6Lf_fHwrAAAAAOLb2LIIfrpaZxS0MtmtlVkfSGVc"></div> -->
-            <input type="hidden" name="redirectTo" value="https://www.kairosysai.com/">
             <button type="submit">Submit</button>
         </form>
     </section>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async e => {
+            e.preventDefault();
+            const f = e.target;
+
+            const formData = {
+                name: f.name.value,
+                email: f.email.value,
+                company: f.company.value,
+                position: f.position.value,
+                products: f.products.value,
+                demo: f.demo.value,
+                message: f.message.value,
+                timestamp: new Date().toISOString()
+            };
+
+            // 1. Send to SheetDB
+            const sheetRes = await fetch("https://sheetdb.io/api/v1/q6iz8wjtunroc", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ data: formData })
+            });
+
+            // 2. Send to StaticForms
+            const staticData = new FormData();
+            staticData.append("name", formData.name);
+            staticData.append("email", formData.email);
+            staticData.append("company", formData.company);
+            staticData.append("position", formData.position);
+            staticData.append("products", formData.products);
+            staticData.append("demo", formData.demo);
+            staticData.append("message", formData.message);
+            staticData.append("honeypot", "");
+            staticData.append("replyTo", formData.email);
+            staticData.append("accessKey", "sf_34b9k8e142ieckn2f4dnc3bn"); 
+
+            const emailRes = await fetch("https://api.staticforms.xyz/submit", {
+                method: "POST",
+                body: staticData
+            });
+
+            if (sheetRes.ok && emailRes.ok) {
+                alert("Thanks! We'll be in touch.");
+                f.reset();
+            } else {
+                alert("Oops – something went wrong.");
+            }
+        });
+    </script>
+
     <!-- End Contact Form Section -->
     <button id="theme-toggle" class="theme-toggle" style="display: none;">
         <i id="theme-icon" class="fas fa-moon"></i>

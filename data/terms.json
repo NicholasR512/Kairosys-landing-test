@@ -7,6 +7,13 @@
     "link": "https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k"
   },
   {
+    "term": "Active Patent",
+    "definition": "A patent that has been granted by the relevant authority and is currently enforceable.",
+    "relation": "PIP uses active patents to assess existing protected solutions and possible infringement risks.",
+    "category": "patent",
+    "link": "https://www.patoffice.de/en/blog/patent-status-monitoring-what-are-the-possible-statuses"
+  },
+  {
     "term": "Adverse Event",
     "definition": "An undesirable experience associated with the use of a medical product in a patient.",
     "relation": "PIP identifies and categorizes adverse events from MAUDE and social media sources.",
@@ -81,6 +88,13 @@
     "relation": "PIP checks patents for competitive analysis and freedom-to-operate.",
     "category": "patent",
     "link": "https://www.uspto.gov/patents/basics"
+  },
+    {
+    "term": "Pending Patent",
+    "definition": "A patent application that has been filed but not yet granted or rejected by the patent office.",
+    "relation": "PIP checks pending patents to understand innovations that may become protected in the future.",
+    "category": "patent",
+    "link": "https://www.investopedia.com/terms/p/patent-pending.asp"
   },
   {
     "term": "PubMed",
