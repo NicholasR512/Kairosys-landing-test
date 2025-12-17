@@ -35,6 +35,20 @@
     "link": "https://www.ncbi.nlm.nih.gov/books/NBK558963/"
   },
   {
+  "term": "Design Controls",
+  "definition": "A set of quality practices and procedures that guide the medical device design process to ensure the device meets user needs, intended use, and specified requirements. Design controls help prevent issues, reduce recalls, and support regulatory compliance.",
+  "relation": "PIP can help teams document, track, and analyze design control activities, including design planning, inputs, outputs, verification, validation, and risk management, streamlining compliance and audits.",
+  "category": "medical",
+  "link": "https://www.fda.gov/media/116762/download"
+},
+  {
+  "term": "Design History File (DHF)",
+  "definition": "A formal compilation of records documenting the entire design and development history of a finished medical device, demonstrating compliance with the Design Plan and FDA design control regulations (21 CFR Part 820.30). The DHF ensures that design controls were properly followed from concept to finished device.",
+  "relation": "PIP can help teams collect, organize, and analyze documents and records needed to populate key sections of the DHF efficiently, supporting regulatory compliance and audits.",
+  "category": "medical",
+  "link": "https://www.fda.gov/media/116762/download"
+},
+  {
     "term": "Design Input",
     "definition": "The physical and performance requirements of a device that are used as a basis for device design.",
     "relation": "PIP supports refining design inputs by surfacing real-world issues from feedback sources.",
