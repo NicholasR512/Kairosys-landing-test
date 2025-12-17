@@ -7,11 +7,18 @@
     "link": "https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k"
   },
   {
-    "term": "Active Patent",
-    "definition": "A patent that has been granted by the relevant authority and is currently enforceable.",
-    "relation": "PIP uses active patents to assess existing protected solutions and possible infringement risks.",
-    "category": "patent",
-    "link": "https://www.patoffice.de/en/blog/patent-status-monitoring-what-are-the-possible-statuses"
+  "term": "Substantial Equivalence",
+  "definition": "A regulatory determination by the FDA that a medical device is as safe and effective as a legally marketed predicate device, based on risk-based comparison rather than superficial similarity.",
+  "relation": "PIP can help teams gather and organize the right performance, safety, and clinical evidence to support a substantial equivalence argument.",
+  "category": "medical",
+  "link": "https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k"
+  },
+  {
+  "term": "Premarket Approval (PMA)",
+  "definition": "The FDA’s most stringent premarket review process, required for Class III medical devices that support or sustain life, prevent impairment, or present significant risk. PMA approval is based on valid scientific evidence demonstrating the device is safe and effective for its intended use, without relying on a predicate device.",
+  "relation": "PIP can help teams explore prior PMAs to identify relevant data trends, benchmarks, and regulatory expectations, as well as organize non-clinical and clinical evidence to support a new submission.",
+  "category": "medical",
+  "link": "https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-approval-pma"
   },
   {
     "term": "Adverse Event",
@@ -28,13 +35,6 @@
     "link": "https://www.fda.gov/media/116762/download"
   },
   {
-    "term": "Downvote",
-    "definition": "A Reddit feature that signals disapproval or irrelevance, decreasing a post's visibility.",
-    "relation": "PIP can filter out heavily downvoted content to surface higher-quality signals.",
-    "category": "reddit",
-    "link": "https://support.reddithelp.com/hc/en-us/articles/7419626610708-What-are-upvotes-and-downvotes"
-  },
-  {
     "term": "Failure Mode",
     "definition": "A specific way in which a medical device can fail, such as battery depletion or signal loss.",
     "relation": "PIP categorizes failure modes to identify recurring problems in devices.",
@@ -47,6 +47,27 @@
     "relation": "PIP visualizes failure trends to prioritize areas needing redesign or investigation.",
     "category": "medical",
     "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9778633/"
+  },
+    {
+    "term": "Root Cause",
+    "definition": "The fundamental reason a failure occurs, identified through structured analysis like FMEA.",
+    "relation": "PIP enables identification of root causes by organizing adverse event narratives and failure modes.",
+    "category": "medical",
+    "link": "https://www.patientsafety.va.gov/professionals/onthejob/rca.asp"
+  },
+  {
+    "term": "Signal Detection",
+    "definition": "A technique in post-market surveillance used to detect new or rare safety concerns from large datasets.",
+    "relation": "PIP uses signal detection to flag potential risks earlier than traditional reports.",
+    "category": "medical",
+    "link": "https://who-umc.org/signal-work/what-is-a-signal/"
+  },
+  {
+    "term": "Signal Prioritization",
+    "definition": "The process of ranking safety signals based on severity, frequency, and novelty.",
+    "relation": "PIP prioritizes potential issues so teams can focus on the highest-risk problems first.",
+    "category": "medical",
+    "link": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/signal-management"
   },
   {
     "term": "Form 3500A",
@@ -61,6 +82,27 @@
     "relation": "PIP analyzes patents to assess the freedom to operate for new device concepts.",
     "category": "patent",
     "link": "https://www.wipo.int/documents/d/tisc/docs-en-tisc-toolkit-freedom-to-operate-description.pdf"
+  },
+    {
+    "term": "Patent",
+    "definition": "A legal right that grants an inventor exclusive rights to a new, useful, and non-obvious invention for a period of time.",
+    "relation": "PIP checks patents for competitive analysis and freedom-to-operate.",
+    "category": "patent",
+    "link": "https://www.uspto.gov/patents/basics"
+  },
+    {
+    "term": "Pending Patent",
+    "definition": "A patent application that has been filed but not yet granted or rejected by the patent office.",
+    "relation": "PIP checks pending patents to understand innovations that may become protected in the future.",
+    "category": "patent",
+    "link": "https://www.investopedia.com/terms/p/patent-pending.asp"
+  },
+   {
+    "term": "Active Patent",
+    "definition": "A patent that has been granted by the relevant authority and is currently enforceable.",
+    "relation": "PIP uses active patents to assess existing protected solutions and possible infringement risks.",
+    "category": "patent",
+    "link": "https://www.patoffice.de/en/blog/patent-status-monitoring-what-are-the-possible-statuses"
   },
   {
     "term": "Google Patents",
@@ -83,20 +125,6 @@
     "link": "https://dovetail.com/research/narrative-analysis/"
   },
   {
-    "term": "Patent",
-    "definition": "A legal right that grants an inventor exclusive rights to a new, useful, and non-obvious invention for a period of time.",
-    "relation": "PIP checks patents for competitive analysis and freedom-to-operate.",
-    "category": "patent",
-    "link": "https://www.uspto.gov/patents/basics"
-  },
-    {
-    "term": "Pending Patent",
-    "definition": "A patent application that has been filed but not yet granted or rejected by the patent office.",
-    "relation": "PIP checks pending patents to understand innovations that may become protected in the future.",
-    "category": "patent",
-    "link": "https://www.investopedia.com/terms/p/patent-pending.asp"
-  },
-  {
     "term": "PubMed",
     "definition": "A search engine maintained by the National Library of Medicine for biomedical and life sciences literature.",
     "relation": "PIP may incorporate PubMed sources for clinical evidence validation.",
@@ -110,28 +138,7 @@
     "category": "reddit",
     "link": "https://support.reddithelp.com/hc/en-us/articles/204511479-What-is-Reddit"
   },
-  {
-    "term": "Root Cause",
-    "definition": "The fundamental reason a failure occurs, identified through structured analysis like FMEA.",
-    "relation": "PIP enables identification of root causes by organizing adverse event narratives and failure modes.",
-    "category": "medical",
-    "link": "https://www.patientsafety.va.gov/professionals/onthejob/rca.asp"
-  },
-  {
-    "term": "Signal Detection",
-    "definition": "A technique in post-market surveillance used to detect new or rare safety concerns from large datasets.",
-    "relation": "PIP uses signal detection to flag potential risks earlier than traditional reports.",
-    "category": "medical",
-    "link": "https://who-umc.org/signal-work/what-is-a-signal/"
-  },
-  {
-    "term": "Signal Prioritization",
-    "definition": "The process of ranking safety signals based on severity, frequency, and novelty.",
-    "relation": "PIP prioritizes potential issues so teams can focus on the highest-risk problems first.",
-    "category": "medical",
-    "link": "https://www.ema.europa.eu/en/human-regulatory-overview/post-authorisation/pharmacovigilance-post-authorisation/signal-management"
-  },
-  {
+    {
     "term": "Subreddit",
     "definition": "A user-created community on Reddit focused on a specific topic, like r/AskDocs or r/medicaldevices.",
     "relation": "PIP narrows monitoring to specific subreddits relevant to medical device safety.",
@@ -142,6 +149,13 @@
     "term": "Upvote",
     "definition": "An action on Reddit that shows agreement or approval, pushing content higher in visibility.",
     "relation": "PIP considers upvoted posts more impactful when analyzing feedback trends.",
+    "category": "reddit",
+    "link": "https://support.reddithelp.com/hc/en-us/articles/7419626610708-What-are-upvotes-and-downvotes"
+  },
+    {
+    "term": "Downvote",
+    "definition": "A Reddit feature that signals disapproval or irrelevance, decreasing a post's visibility.",
+    "relation": "PIP can filter out heavily downvoted content to surface higher-quality signals.",
     "category": "reddit",
     "link": "https://support.reddithelp.com/hc/en-us/articles/7419626610708-What-are-upvotes-and-downvotes"
   }
