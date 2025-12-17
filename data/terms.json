@@ -1,5 +1,12 @@
 [
   {
+  "term": "Device Classification",
+  "definition": "The FDA categorizes medical devices based on risk to patients and users, organizing devices into three classes: Class I [low risk, usually exempt from 510(k)], Class II [moderate risk, usually requires 510(k) demonstrating substantial equivalence], and Class III [high risk, requires Premarket Approval (PMA)]. Classification determines the regulatory pathway, required controls, and level of evidence needed for market approval.",
+  "relation": "PIP can help teams research device classifications, identify prior submissions in the same category, and guide regulatory strategy for 510(k) or PMA pathways.",
+  "category": "medical",
+  "link": "https://www.fda.gov/medical-devices/overview-device-regulation/classify-your-medical-device"
+},
+  {
     "term": "510(k)",
     "definition": "A premarket submission to the FDA demonstrating a device is safe and effective by comparing it to a legally marketed device.",
     "relation": "PIP can cross-reference 510(k) summaries to validate design intentions and outcomes.",
@@ -11,7 +18,7 @@
   "definition": "A regulatory determination by the FDA that a medical device is as safe and effective as a legally marketed predicate device, based on risk-based comparison rather than superficial similarity.",
   "relation": "PIP can help teams gather and organize the right performance, safety, and clinical evidence to support a substantial equivalence argument.",
   "category": "medical",
-  "link": "https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k"
+  "link": "https://www.fda.gov/media/82395/download?attachment"
   },
   {
   "term": "Premarket Approval (PMA)",
@@ -122,6 +129,7 @@
     "term": "Narrative Analysis",
     "definition": "A method of extracting insights from qualitative text data by identifying themes and trends in written reports.",
     "relation": "PIP performs narrative analysis on MAUDE and social media complaints to group similar issues.",
+    "category": "analysis",
     "link": "https://dovetail.com/research/narrative-analysis/"
   },
   {
