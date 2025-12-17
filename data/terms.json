@@ -42,18 +42,25 @@
   "link": "https://www.fda.gov/media/116762/download"
 },
   {
+    "term": "Design Inputs",
+    "definition": "The documented, measurable requirements that form the foundation of a medical device’s design, translating user needs and intended use into objective criteria that guide development and enable design verification and validation, as required under 21 CFR 820.30(c).",
+    "relation": "PIP helps teams develop robust, traceable design inputs by synthesizing regulatory requirements, prior submissions, standards, and real-world user feedback, reducing ambiguity and downstream redesign risk.",
+    "category": "medical",
+    "link": "https://www.fda.gov/media/116762/download"
+  },
+  {
+    "term": "Design Outputs",
+    "definition": "The build-ready drawings, materials, specifications, instructions, and test methods that result from the design effort and define how a medical device is made, tested, inspected, and packaged. Design outputs translate design inputs into measurable and verifiable specifications, as required under 21 CFR 820.30(d).",
+    "relation": "PIP helps teams align design outputs with approved design inputs by organizing specifications, acceptance criteria, and prior regulatory benchmarks, thereby strengthening traceability, verification, and downstream Device Master Record (DMR) creation.",
+    "category": "medical",
+    "link": "https://www.fda.gov/media/116762/download"
+  },
+    {
   "term": "Design History File (DHF)",
   "definition": "A formal compilation of records documenting the entire design and development history of a finished medical device, demonstrating compliance with the Design Plan and FDA design control regulations (21 CFR Part 820.30). The DHF ensures that design controls were properly followed from concept to finished device.",
   "relation": "PIP can help teams collect, organize, and analyze documents and records needed to populate key sections of the DHF efficiently, supporting regulatory compliance and audits.",
   "category": "medical",
   "link": "https://www.fda.gov/media/116762/download"
-},
-  {
-    "term": "Design Input",
-    "definition": "The physical and performance requirements of a device that are used as a basis for device design.",
-    "relation": "PIP supports refining design inputs by surfacing real-world issues from feedback sources.",
-    "category": "medical",
-    "link": "https://www.fda.gov/media/116762/download"
   },
   {
     "term": "Failure Mode",
