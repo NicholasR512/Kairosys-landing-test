@@ -37,21 +37,21 @@
   {
   "term": "Design Controls",
   "definition": "A set of quality practices and procedures that guide the medical device design process to ensure the device meets user needs, intended use, and specified requirements. Design controls help prevent issues, reduce recalls, and support regulatory compliance.",
-  "relation": "PIP can help teams document, track, and analyze design control activities, including design planning, inputs, outputs, verification, validation, and risk management, streamlining compliance and audits.",
+  "relation": "PIP can help teams analyze data relevant to various design control activities, including design planning, inputs, outputs, and risk management.",
   "category": "medical",
   "link": "https://www.fda.gov/media/116762/download"
 },
   {
     "term": "Design Inputs",
     "definition": "The documented, measurable requirements that form the foundation of a medical device’s design, translating user needs and intended use into objective criteria that guide development and enable design verification and validation, as required under 21 CFR 820.30(c).",
-    "relation": "PIP helps teams develop robust, traceable design inputs by synthesizing regulatory requirements, prior submissions, standards, and real-world user feedback, reducing ambiguity and downstream redesign risk.",
+    "relation": "PIP helps teams develop robust, traceable design inputs by synthesizing regulatory requirements, prior submissions, and real-world user feedback to reduce ambiguity and downstream redesign risk.",
     "category": "medical",
     "link": "https://www.fda.gov/media/116762/download"
   },
   {
     "term": "Design Outputs",
     "definition": "The build-ready drawings, materials, specifications, instructions, and test methods that result from the design effort and define how a medical device is made, tested, inspected, and packaged. Design outputs translate design inputs into measurable and verifiable specifications, as required under 21 CFR 820.30(d).",
-    "relation": "PIP helps teams align design outputs with approved design inputs by organizing specifications, acceptance criteria, and prior regulatory benchmarks, thereby strengthening traceability, verification, and downstream Device Master Record (DMR) creation.",
+    "relation": "PIP helps teams align design outputs with approved design inputs by analyzing and organizing prior submissions to better understand specifications, acceptance criteria, and regulatory benchmarks, thereby strengthening traceability, verification, and downstream Device Master Record (DMR) creation.",
     "category": "medical",
     "link": "https://www.fda.gov/media/116762/download"
   },
@@ -72,7 +72,7 @@
   {
   "term": "Design Review",
   "definition": "A formal, documented evaluation of the medical device design conducted at defined stages of development to ensure requirements are being met, risks are identified early, and the design is progressing appropriately, as required under 21 CFR 820.30(e).",
-  "relation": "PIP can support effective design reviews by surfacing relevant regulatory expectations, prior submission lessons, and unresolved risks to help cross-functional teams identify gaps early and document decisions clearly.",
+  "relation": "PIP can support effective design reviews by revealing relevant regulatory expectations, prior submission lessons, and unresolved risks to help cross-functional teams identify gaps early and document decisions clearly.",
   "category": "medical",
   "link": "https://www.fda.gov/media/116762/download"
 },
@@ -87,6 +87,13 @@
   "term": "Design Validation",
   "definition": "The process of confirming that a medical device meets user needs and intended uses under actual or simulated use conditions, answering the question: “Did we design the right device?”, as required under 21 CFR 820.30(g). Validation typically uses production-equivalent units and includes clinical and human factors considerations.",
   "relation": "PIP helps teams plan validation strategies by analyzing prior FDA submissions, known use-related risks, and human factors expectations to ensure validation studies address real-world use conditions.",
+  "category": "medical",
+  "link": "https://www.fda.gov/media/116762/download"
+},
+  {
+  "term": "Design Transfer",
+  "definition": "The controlled process of translating a validated medical device design into production-ready specifications, ensuring that manufacturing consistently produces devices that meet design, regulatory, and quality requirements, as required under 21 CFR 820.30(h).",
+  "relation": "PIP can help teams reference prior submissions and real-world feedback to prevent delays, corrective and preventive actions (CAPAs), and costly redesigns.",
   "category": "medical",
   "link": "https://www.fda.gov/media/116762/download"
 },
