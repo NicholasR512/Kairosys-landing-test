@@ -93,7 +93,7 @@
   {
   "term": "Design Transfer",
   "definition": "The controlled process of translating a validated medical device design into production-ready specifications, ensuring that manufacturing consistently produces devices that meet design, regulatory, and quality requirements, as required under 21 CFR 820.30(h).",
-  "relation": "PIP can help teams reference prior submissions and real-world feedback to prevent delays, corrective and preventive actions (CAPAs), and costly redesigns.",
+  "relation": "PIP can help teams analyze prior submissions and real-world feedback to prevent delays, corrective and preventive actions (CAPAs), and costly redesigns.",
   "category": "medical",
   "link": "https://www.fda.gov/media/116762/download"
 },
