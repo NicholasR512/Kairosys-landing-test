@@ -55,6 +55,13 @@
     "category": "medical",
     "link": "https://www.fda.gov/media/116762/download"
   },
+  {
+  "term": "Human Factors Engineering (HFE)",
+  "definition": "The application of knowledge about human behavior, abilities, and limitations to the design of medical devices to ensure they can be used safely and effectively by intended users, in intended environments, for intended purposes. HFE focuses on the user interface, labeling, training, and use-related risk mitigation, as outlined in FDA guidance.",
+  "relation": "PIP helps teams anticipate and address human factors expectations by analyzing prior FDA submissions, known use-related hazards, and real-world user feedback to inform design inputs, risk controls, and usability validation planning.",
+  "category": "medical",
+  "link": "https://www.fda.gov/media/80481/download"
+},
     {
   "term": "Design History File (DHF)",
   "definition": "A formal compilation of records documenting the entire design and development history of a finished medical device, demonstrating compliance with the Design Plan and FDA design control regulations (21 CFR Part 820.30). The DHF ensures that design controls were properly followed from concept to finished device.",
@@ -62,6 +69,27 @@
   "category": "medical",
   "link": "https://www.fda.gov/media/116762/download"
   },
+  {
+  "term": "Design Review",
+  "definition": "A formal, documented evaluation of the medical device design conducted at defined stages of development to ensure requirements are being met, risks are identified early, and the design is progressing appropriately, as required under 21 CFR 820.30(e).",
+  "relation": "PIP can support effective design reviews by surfacing relevant regulatory expectations, prior submission lessons, and unresolved risks to help cross-functional teams identify gaps early and document decisions clearly.",
+  "category": "medical",
+  "link": "https://www.fda.gov/media/116762/download"
+},
+  {
+  "term": "Design Verification",
+  "definition": "The process of using objective evidence to confirm that design outputs meet the specified design inputs, answering the question: “Did we design the device right?”, as required under 21 CFR 820.30(f).",
+  "relation": "PIP helps teams strengthen verification by aligning clear, testable design inputs with outputs, acceptance criteria, and prior regulatory benchmarks, improving traceability and reducing rework.",
+  "category": "medical",
+  "link": "https://www.fda.gov/media/116762/download"
+},
+  {
+  "term": "Design Validation",
+  "definition": "The process of confirming that a medical device meets user needs and intended uses under actual or simulated use conditions, answering the question: “Did we design the right device?”, as required under 21 CFR 820.30(g). Validation typically uses production-equivalent units and includes clinical and human factors considerations.",
+  "relation": "PIP helps teams plan validation strategies by analyzing prior FDA submissions, known use-related risks, and human factors expectations to ensure validation studies address real-world use conditions.",
+  "category": "medical",
+  "link": "https://www.fda.gov/media/116762/download"
+},
   {
     "term": "Failure Mode",
     "definition": "A specific way in which a medical device can fail, such as battery depletion or signal loss.",
