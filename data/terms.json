@@ -98,16 +98,16 @@
   "link": "https://www.fda.gov/media/116762/download"
 },
   {
-    "term": "Failure Mode",
-    "definition": "A specific way in which a medical device can fail, such as battery depletion or signal loss.",
-    "relation": "PIP categorizes failure modes to identify recurring problems in devices.",
-    "category": "medical",
-    "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10229026/"
-  },
+  "term": "Failure Mode and Effects Analysis (FMEA)",
+  "definition": "A structured, proactive risk management method used to identify, prioritize, and mitigate potential failures in a medical device's design, manufacturing, or process. It evaluates specific ways in which components or processes might fail (failure modes), the consequences of those failures (effects), and assigns risk priority numbers to guide corrective actions.",
+  "relation": "PIP can support FMEA by aggregating historical failures, regulatory feedback, and post-market data to inform risk scoring and prioritize high-risk failure modes.",
+  "category": "medical",
+  "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10229026/"
+},
   {
     "term": "Failure Trend",
     "definition": "The pattern or increase in a specific type of device failure over time.",
-    "relation": "PIP visualizes failure trends to prioritize areas needing redesign or investigation.",
+    "relation": "PIP can help visualize failure trends to prioritize areas needing redesign or investigation.",
     "category": "medical",
     "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9778633/"
   },
