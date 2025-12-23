@@ -35,66 +35,8 @@
 </head>
 
 <body>
-    <header class="nav-section">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/"><img src="imgs/Kairosys_Logo-removebg-preview.png" alt="KairoSys logo"></a>
-                <a href="/" class="logo-text">KairoSys</a>
-            </div>
-
-            <div class="nav-links-container">
-                <div class="nav-links">
-                    <div class="dropdown">
-                        <a href="/#info">Product <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/#info">Overview</a>
-                            <a href="/#features">Features</a>
-                            <a href="/#demo">Demo</a>
-                            <a href="https://productai-mein.onrender.com/" target="_blank">Visit Product</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="/#who-we-serve">Solution <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/#who-we-serve">Who We Serve</a>
-                            <a href="/#use-case-explorer">Use Cases</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="/#faqs">Questions <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/#faqs">FAQs</a>
-                            <a href="/search">Search Glossary</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="/research">About Us <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/team" style="display: none;">Meet The Team</a>
-                            <a href="/research">Relevant Research</a>
-                        </div>
-                    </div>
-                    <a href="/#contact">Contact</a>
-                </div>
-            </div>
-
-            <div class="right-nav">
-                <a href="/#contact" class="contact-btn" id="contact-btn">
-                    <span class="contact-text">Schedule Demo</span>
-                    <span class="icon-wrapper">
-                        <i id="closed" class="fa fa-envelope"></i>
-                        <i id="open" class="fa fa-envelope-open"></i>
-                    </span>
-                </a>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <div class="line" id="l1"></div>
-                    <div class="line" id="l2"></div>
-                    <div class="line" id="l3"></div>
-                </button>
-            </div>
-        </nav>
-    </header>
-    <div class="nav-overlay"></div>
+    <!-- Navigation Component -->
+    <div id="navbar-placeholder"></div>
 
     <section class="legal-section">
         <div class="legal-container">
@@ -141,7 +83,7 @@
                 secure.</p>
 
             <h2>6. Your Rights</h2>
-            <p>If you wish to request access, correction, or deletion of your data, please contact us at <a
+            <p>If you wish to request access, correction, or deletion of your data, please contact us at 
                     href="mailto:kairosys.ai@gmail.com">kairosys.ai@gmail.com</a>.</p>
 
             <h2>7. Changes to This Policy</h2>
@@ -149,63 +91,15 @@
                 effective date.</p>
 
             <h2>8. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, contact us at <a
+            <p>If you have any questions about this Privacy Policy, contact us at 
                     href="mailto:kairosys.ai@gmail.com">kairosys.ai@gmail.com</a>.</p>
         </div>
     </section>
 
+    <!-- Footer Component -->
+    <div id="footer-placeholder"></div>
 
-    <section class="footer-section">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <a href="/">
-                        <img src="imgs/Kairosys_Logo-removebg-preview.png" alt="Logo" id="footer-img">
-                    </a>
-                    <a href="/">KairoSys Applied Intelligence</a>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h5>Product</h5>
-                        <a href="/#info" class="footer-tail-link">Overview</a>
-                        <a href="/#features" class="footer-tail-link">Features</a>
-                        <a href="/#demo" class="footer-tail-link">Demo</a>
-                        <a href="https://productai-mein.onrender.com/" target="_blank" class="footer-tail-link">Visit Product</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Solution</h5>
-                        <a href="/#who-we-serve" class="footer-tail-link">Who We Serve</a>
-                        <a href="/#use-case-explorer" class="footer-tail-link">Use Cases</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Questions</h5>
-                        <a href="/#faqs" class="footer-tail-link">FAQs</a>
-                        <a href="/search" class="footer-tail-link">Search Glossary</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Contact</h5>
-                        <a href="/#contact" class="footer-tail-link">Schedule Demo</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>About Us</h5>
-                        <a href="/team" class="footer-tail-link" style="display: none;">Meet The Team</a>
-                        <a href="/research" class="footer-tail-link">Relevant Research</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Legal</h5>
-                        <a href="/privacy" class="footer-tail-link">Privacy Policy</a>
-                        <a href="/terms" class="footer-tail-link">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-right">
-                <p>© 2025 KairoSys Applied Intelligence LLC</p>
-            </div>
-        </div>
-    </section>
-
+    <script src="scripts/components.js"></script>
     <script src="scripts/main.js" defer></script>
 
     <script>
