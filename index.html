@@ -39,67 +39,9 @@
 <body>
     <div id="my-background" style="width: 100%;"></div>
 
+    <!-- Navigation Component -->
+    <div id="navbar-placeholder"></div>
 
-    <header class="nav-section">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="/"><img src="imgs/Kairosys_Logo-removebg-preview.png" alt="KairoSys logo"></a>
-                <a href="/" class="logo-text">KairoSys</a>
-            </div>
-
-            <div class="nav-links-container">
-                <div class="nav-links">
-                    <div class="dropdown">
-                        <a href="/#info">Product <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/#info">Overview</a>
-                            <a href="/#features">Features</a>
-                            <a href="/#demo">Demo</a>
-                            <a href="https://productai-mein.onrender.com/" target="_blank">Visit Product</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="/#who-we-serve">Solution <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/#who-we-serve">Who We Serve</a>
-                            <a href="/#use-case-explorer">Use Cases</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="/#faqs">Questions <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/#faqs">FAQs</a>
-                            <a href="/search">Search Glossary</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <a href="/research">About Us <i class="fa fa-chevron-down arrow"></i></a>
-                        <div class="dropdown-content">
-                            <a href="/team" style="display: none;">Meet The Team</a>
-                            <a href="/research">Relevant Research</a>
-                        </div>
-                    </div>
-                    <a href="/#contact">Contact</a>
-                </div>
-            </div>
-
-            <div class="right-nav">
-                <a href="/#contact" class="contact-btn" id="contact-btn">
-                    <span class="contact-text">Schedule Demo</span>
-                    <span class="icon-wrapper">
-                        <i id="closed" class="fa fa-envelope"></i>
-                        <i id="open" class="fa fa-envelope-open"></i>
-                    </span>
-                </a>
-                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <div class="line" id="l1"></div>
-                    <div class="line" id="l2"></div>
-                    <div class="line" id="l3"></div>
-                </button>
-            </div>
-        </nav>
-    </header>
-    <div class="nav-overlay"></div>
     <section class="hero-section">
 
         <div class="hero">
@@ -295,8 +237,8 @@
                         </h3>
                         <p class="dropdown-hint">Click to expand</p>
                         <div class="use-case-content">
-                            <blockquote class="use-case-question">“Are our cardiac monitor battery issues an isolated
-                                problem or industry-wide?”</blockquote>
+                            <blockquote class="use-case-question">"Are our cardiac monitor battery issues an isolated
+                                problem or industry-wide?"</blockquote>
                             <ul class="use-case-details">
                                 <li><strong>Inputs:</strong> Internal reports, device specifications</li>
                                 <li><strong>Output:</strong> Trends in adverse events categorized by failure mode from internal data compared to other devices from FDA databases</li>
@@ -310,9 +252,9 @@
                             <span class="chevron"></span>
                         </h3>
                         <div class="use-case-content">
-                            <blockquote class="use-case-question">“Why are our spinal cord stimulator leads failing
+                            <blockquote class="use-case-question">"Why are our spinal cord stimulator leads failing
                                 after
-                                implantation?”</blockquote>
+                                implantation?"</blockquote>
                             <ul class="use-case-details">
                                 <li><strong>Inputs:</strong> Device failure reports, design specifications</li>
                                 <li><strong>Output:</strong> Failure pattern linked to specific patient movements (e.g.,
@@ -329,9 +271,9 @@
                             <span class="chevron"></span>
                         </h3>
                         <div class="use-case-content">
-                            <blockquote class="use-case-question">“What user errors are causing our home dialysis
+                            <blockquote class="use-case-question">"What user errors are causing our home dialysis
                                 machine
-                                alarms?”</blockquote>
+                                alarms?"</blockquote>
                             <ul class="use-case-details">
                                 <li><strong>Inputs:</strong> Customer support incidents, alarm logs, Reddit threads
                                 </li>
@@ -564,66 +506,12 @@
         <i id="theme-icon" class="fas fa-moon"></i>
     </button>
 
-    <section class="footer-section">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-logo">
-                    <a href="/">
-                        <img src="imgs/Kairosys_Logo-removebg-preview.png" alt="Logo" id="footer-img">
-                    </a>
-                    <a href="/">KairoSys Applied Intelligence</a>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h5>Product</h5>
-                        <a href="/#info" class="footer-tail-link">Overview</a>
-                        <a href="/#features" class="footer-tail-link">Features</a>
-                        <a href="/#demo" class="footer-tail-link">Demo</a>
-                        <a href="https://productai-mein.onrender.com/" target="_blank" class="footer-tail-link">Visit Product</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Solution</h5>
-                        <a href="/#who-we-serve" class="footer-tail-link">Who We Serve</a>
-                        <a href="/#use-case-explorer" class="footer-tail-link">Use Cases</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Questions</h5>
-                        <a href="/#faqs" class="footer-tail-link">FAQs</a>
-                        <a href="/search" class="footer-tail-link">Search Glossary</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Contact</h5>
-                        <a href="/#contact" class="footer-tail-link">Schedule Demo</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>About Us</h5>
-                        <a href="/team" class="footer-tail-link" style="display: none;">Meet The Team</a>
-                        <a href="/research" class="footer-tail-link">Relevant Research</a>
-                    </div>
-                    <div class="footer-col">
-                        <h5>Legal</h5>
-                        <a href="/privacy" class="footer-tail-link">Privacy Policy</a>
-                        <a href="/terms" class="footer-tail-link">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-right">
-                <div class="footer-social">
-                    <a href="https://www.linkedin.com/company/kairosys-applied-intelligence/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-                <p>© 2025 KairoSys Applied Intelligence LLC</p>
-            </div>
-        </div>
-    </section>
-
-
+    <!-- Footer Component -->
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="scripts/components.js"></script>
     <script src="scripts/main.js" defer></script>
 
     <script>
