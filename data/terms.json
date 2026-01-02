@@ -35,6 +35,20 @@
     "link": "https://www.ncbi.nlm.nih.gov/books/NBK558963/"
   },
   {
+  "term": "Use Error",
+  "definition": "An outcome of medical device use that differs from the manufacturer’s intended use or expected performance and is not caused by a device malfunction but by user interaction with the device. Use errors are often associated with inadequate user interface design, labeling, training, or workflows and are a core focus of human factors engineering.",
+  "relation": "Use errors identified post-market can inform human factors validation, labeling updates, and design changes. PIP can help link recurring use errors to interface design patterns, prior FDA feedback, and known usability risks.",
+  "category": "medical",
+  "link": "https://www.fda.gov/medical-devices/human-factors-and-medical-devices/human-factors-postmarket-information-device-surveillance-and-reporting-processes"
+},
+  {
+  "term": "Device Malfunction",
+  "definition": "A failure of a medical device to meet its performance specifications or otherwise perform as intended due to a design or manufacturing issue. A malfunction is reportable under MDR even if no patient harm occurs, when recurrence would be reasonably likely to cause death or serious injury.",
+  "relation": "Malfunctions serve as early warning signals for potential safety issues. PIP can help aggregate malfunction trends from MAUDE, complaints, and prior submissions to support proactive risk management and design improvements.",
+  "category": "medical",
+  "link": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-803/subpart-A/section-803.3"
+},
+  {
   "term": "Design Controls",
   "definition": "A set of quality practices and procedures that guide the medical device design process to ensure the device meets user needs, intended use, and specified requirements. Design controls help prevent issues, reduce recalls, and support regulatory compliance.",
   "relation": "PIP can help teams analyze data relevant to various design control activities, including design planning, inputs, outputs, and risk management.",
