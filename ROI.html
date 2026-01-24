@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KairoSys Applied Intelligence</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2SKT5QPXH3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2SKT5QPXH3');
+    </script>
+</head>
+
+<body>
+    <div id="my-background" style="width: 100%;"></div>
+
+    <!-- Navigation Component -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- ========================================
+         START ADDING YOUR CONTENT HERE
+         ======================================== -->
+
+    <section class="content-section" style="min-height: 60vh; padding: 4rem 2rem; background-color: var(--white);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <h1 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: var(--main-blue); font-family: 'Poppins', sans-serif; font-weight: 700;">ROI Calculator</h1>
+            
+            <!-- Elfsight Calculator | KairoSysAI ROI -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-7831cffb-db28-4f64-b791-668201a6a21b" data-elfsight-app-lazy></div>
+            
+            <p style="text-align: center; color: var(--gray); margin-top: 2rem; font-size: 1.2rem; font-family: 'Poppins', sans-serif; font-style: italic;">Estimates are based on 80% time savings and platform subscription cost of $200 per month.</p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         END CONTENT AREA
+         ======================================== -->
+
+    <!-- Footer Component -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="scripts/components.js"></script>
+    <script src="scripts/main.js" defer></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Chatbase Widget -->
+    <script>
+        (function () { 
+            if (!window.chatbase || window.chatbase("getState") !== "initialized") { 
+                window.chatbase = (...arguments) => { 
+                    if (!window.chatbase.q) { 
+                        window.chatbase.q = [] 
+                    } 
+                    window.chatbase.q.push(arguments) 
+                }; 
+                window.chatbase = new Proxy(window.chatbase, { 
+                    get(target, prop) { 
+                        if (prop === "q") { 
+                            return target.q 
+                        } 
+                        return (...args) => target(prop, ...args) 
+                    } 
+                }) 
+            } 
+            const onLoad = function () { 
+                const script = document.createElement("script"); 
+                script.src = "https://www.chatbase.co/embed.min.js"; 
+                script.id = "m4y2ugTnxUhkWKG05pxOs"; 
+                script.domain = "www.chatbase.co"; 
+                document.body.appendChild(script) 
+            }; 
+            if (document.readyState === "complete") { 
+                onLoad() 
+            } else { 
+                window.addEventListener("load", onLoad) 
+            } 
+        })();
+    </script>
+</body>
+
+</html>
