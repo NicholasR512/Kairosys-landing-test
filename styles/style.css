@@ -1150,6 +1150,11 @@ body.who-we-serve-body {
     text-align: left;
 }
 
+.question button span:first-child {
+    flex: 1;
+    margin-right: 16px;
+}
+
 .question button:hover {
     background-color: #f8f8f8;
 }
@@ -1182,6 +1187,7 @@ body.who-we-serve-body {
     align-items: center;
     justify-content: center;
     font-size: 16px;
+    flex-shrink: 0; /* prevent squish */
 }
 
 .question button .d-arrow.rotate {
