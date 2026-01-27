@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Your Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="blog-styles.css">
+</head>
+<body>
+    <!-- Navigation (copy from your main site) -->
+    <div class="nav-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="your-logo.png" alt="Logo">
+                <a href="index.html" class="logo-text">Your Company</a>
+            </div>
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+            <div class="right-nav">
+                <a href="index.html#contact" class="contact-btn" id="contact-btn">
+                    Get Started
+                    <div class="icon-wrapper">
+                        <i class="fa-regular fa-envelope" id="closed"></i>
+                        <i class="fa-solid fa-envelope-open" id="open"></i>
+                    </div>
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Blog List View -->
+        <div id="blogList">
+            <header class="blog-header">
+                <h1>Our Blog</h1>
+                <p class="subtitle">Insights, updates, and stories from our team</p>
+            </header>
+
+            <!-- Featured Post (automatically first post) -->
+            <div id="featuredPost"></div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid"></div>
+        </div>
+
+        <!-- Full Post View -->
+        <div id="fullPostContainer"></div>
+    </div>
+
+    <!-- Footer (copy from your main site) -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="your-logo.png" alt="Logo" id="footer-img">
+                    <a href="index.html">Your Company</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <p>&copy; 2026 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="blog-posts.js"></script>
+    <script src="blog-script.js"></script>
+</body>
+</html>
