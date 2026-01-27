@@ -14,27 +14,29 @@ function renderBlogPosts() {
     // Sort posts by date (newest first)
     const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
     
-    // Render featured post (first post)
-    const featured = sortedPosts[0];
+    // Find featured post (either marked as featured, or use most recent)
+    const featuredPost = sortedPosts.find(post => post.featured === true) || sortedPosts[0];
+    
+    // Render featured post
     featuredPostContainer.innerHTML = `
-        <div class="featured-post" onclick="showPost('${featured.id}')">
+        <div class="featured-post" onclick="showPost('${featuredPost.id}')">
             <div class="featured-content">
                 <span class="featured-badge">✨ Featured</span>
-                <h2 class="featured-title">${featured.title}</h2>
-                <p class="featured-excerpt">${featured.excerpt}</p>
+                <h2 class="featured-title">${featuredPost.title}</h2>
+                <p class="featured-excerpt">${featuredPost.excerpt}</p>
                 <div class="featured-meta">
-                    <span class="card-category">${featured.category}</span>
+                    <span class="card-category">${featuredPost.category}</span>
                     <span>•</span>
-                    <span>${featured.date}</span>
+                    <span>${featuredPost.date}</span>
                     <span>•</span>
-                    <span>${featured.readTime}</span>
+                    <span>${featuredPost.readTime}</span>
                 </div>
             </div>
         </div>
     `;
     
-    // Render remaining posts in grid
-    const remainingPosts = sortedPosts.slice(1);
+    // Render remaining posts in grid (exclude the featured post)
+    const remainingPosts = sortedPosts.filter(post => post.id !== featuredPost.id);
     blogGrid.innerHTML = remainingPosts.map(post => `
         <article class="blog-card" onclick="showPost('${post.id}')">
             <img src="${post.image}" alt="${post.title}" class="card-image">

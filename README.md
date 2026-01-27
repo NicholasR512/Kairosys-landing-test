@@ -106,6 +106,19 @@ The section between `---` markers is called frontmatter. Here's what each field 
 - **readTime**: Estimated reading time (e.g., "5 min read")
 - **excerpt**: Short description shown in blog list (1-2 sentences)
 - **image**: Header image URL (use Unsplash or your own images)
+- **featured**: (Optional) Set to `true` to make this the featured post at the top of the blog. If not specified, the most recent post will be featured.
+
+Example with featured post:
+```markdown
+---
+title: Our Big Announcement
+category: Company
+readTime: 3 min read
+excerpt: We're excited to share some major news with you today.
+image: https://images.unsplash.com/photo-xyz?w=800&q=80
+featured: true
+---
+```
 
 ### Finding Images
 

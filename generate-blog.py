@@ -195,6 +195,7 @@ def process_blog_posts(posts_dir='blog-posts', output_file='blog-posts.js'):
         read_time = frontmatter.get('readTime', '5 min read')
         excerpt = frontmatter.get('excerpt', '')
         image = frontmatter.get('image', 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80')
+        featured = frontmatter.get('featured', 'false').lower() == 'true'
         
         # Convert markdown to HTML
         html_content = markdown_to_html(markdown_content)
@@ -208,7 +209,8 @@ def process_blog_posts(posts_dir='blog-posts', output_file='blog-posts.js'):
             'readTime': read_time,
             'excerpt': excerpt,
             'content': html_content,
-            'image': image
+            'image': image,
+            'featured': featured
         }
         
         blog_posts.append(post)
