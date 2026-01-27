@@ -43,12 +43,12 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
-    padding-top: calc(var(--nav-height) + 2rem); /* Account for sticky navbar */
+    padding-top: 2rem; /* Reduced from calc(var(--nav-height) + 2rem) */
 }
 
 /* Blog Header */
 .blog-header {
-    padding: 4rem 0 3rem;
+    padding: 2rem 0 2rem;
     text-align: center;
     animation: fadeInDown 0.8s ease-out;
 }
