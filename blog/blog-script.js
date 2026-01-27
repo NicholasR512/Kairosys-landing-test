@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize blog
     renderBlogPosts();
     initializeThemeToggle();
-    initializeHamburger();
 });
 
 function renderBlogPosts() {
@@ -149,27 +148,5 @@ function initializeThemeToggle() {
         const isDark = document.body.classList.contains('alt-theme');
         themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-}
-
-// Hamburger menu functionality
-function initializeHamburger() {
-    const hamburger = document.getElementById('hamburger');
-    const navLinksContainer = document.querySelector('.nav-links-container');
-    
-    if (!hamburger || !navLinksContainer) return;
-    
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('open');
-        navLinksContainer.classList.toggle('open');
-    });
-    
-    // Close menu when clicking a link
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('open');
-            navLinksContainer.classList.remove('open');
-        });
     });
 }

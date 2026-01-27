@@ -5,11 +5,17 @@ This blog system makes it incredibly easy to add new blog posts each week. Just 
 ## 📁 Files You Need
 
 ### Core Files (Required):
-1. **blog.html** - Main blog page
-2. **blog-styles.css** - Styling (matches your site's colors)
+1. **blog.html** - Main blog page (uses your existing navbar/footer from components.js)
+2. **blog-styles.css** - Blog-specific styling (matches your site's colors)
 3. **blog-script.js** - Blog functionality
 4. **blog-posts.js** - Auto-generated from your markdown files
 5. **generate-blog.py** - Python script to convert markdown to JavaScript
+
+### Dependencies:
+The blog page uses your existing site infrastructure:
+- **styles/style.css** - Your main site styles (navbar, footer, etc.)
+- **scripts/components.js** - Loads navbar and footer
+- **scripts/main.js** - Your main site JavaScript
 
 ### Content:
 6. **blog-posts/** - Folder containing your markdown blog posts
@@ -25,18 +31,19 @@ your-website/
 ├── blog-script.js
 ├── blog-posts.js
 ├── generate-blog.py
-└── blog-posts/
-    ├── 2026-01-27-how-we-built-our-mvp-in-30-days.md
-    └── 2026-01-20-5-lessons-from-our-first-year.md
+├── blog-posts/
+│   ├── 2026-01-27-how-we-built-our-mvp-in-30-days.md
+│   └── 2026-01-20-5-lessons-from-our-first-year.md
+├── styles/
+│   └── style.css (your existing styles)
+└── scripts/
+    ├── components.js (your existing navbar/footer loader)
+    └── main.js (your existing scripts)
 ```
 
-### Step 2: Update Navigation
-In your **blog.html** file, update:
-- Replace `your-logo.png` with your actual logo path
-- Replace `"Your Company"` with your company name
-- Add any additional navigation links you need
+**Note:** The blog automatically uses your existing navbar and footer through components.js.
 
-### Step 3: Run the Generator
+### Step 2: Run the Generator
 Every time you add a new blog post, run:
 ```bash
 python generate-blog.py

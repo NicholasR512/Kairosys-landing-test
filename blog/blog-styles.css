@@ -38,179 +38,12 @@ body {
     color: var(--black);
 }
 
-/* Navigation Styles (from your existing site) */
-.nav-section {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: var(--white);
-    height: var(--nav-height);
-    opacity: 0.95;
-    z-index: 1001;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar {
-    height: 100%;
-    width: 85vw;
-    max-width: 1600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 50px;
-    height: auto;
-    filter: brightness(var(--logo-b));
-}
-
-.logo-text {
-    margin-left: 10px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--black);
-    text-decoration: none;
-}
-
-.nav-links-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--black);
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 5px 10px;
-    border-radius: 8px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    white-space: nowrap;
-}
-
-.nav-links a:hover {
-    color: var(--main-blue);
-    background-color: rgb(247, 249, 252);
-}
-
-.right-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.contact-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    font-size: 1rem;
-    color: var(--white);
-    padding: 10px 25px;
-    background-color: var(--main-blue);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.icon-wrapper {
-    position: relative;
-    width: 20px;
-    height: 20px;
-}
-
-.icon-wrapper i {
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-#open {
-    opacity: 0;
-    transform: scale(0.8) rotate(-10deg);
-    pointer-events: none;
-}
-
-#closed {
-    opacity: 1;
-    transform: scale(1);
-}
-
-#contact-btn:hover #closed {
-    opacity: 0;
-    transform: scale(1.2) rotate(20deg);
-}
-
-#contact-btn:hover #open {
-    opacity: 1;
-    transform: scale(1.2) rotate(20deg);
-}
-
-.hamburger {
-    width: 30px;
-    height: 24px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.hamburger .line {
-    width: 100%;
-    height: 3px;
-    background-color: var(--black);
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-/* Theme Toggle */
-.theme-toggle {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background-color: var(--main-blue);
-    color: var(--white);
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-    z-index: 1000;
-}
-
-.alt-theme .theme-toggle {
-    background-color: var(--accent);
-}
-
 /* Blog-Specific Styles */
 .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem;
+    padding-top: calc(var(--nav-height) + 2rem); /* Account for sticky navbar */
 }
 
 /* Blog Header */
@@ -580,78 +413,28 @@ body {
     color: var(--gray);
 }
 
-/* Footer Styles */
-.footer-section {
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
     background-color: var(--main-blue);
     color: var(--white);
-    padding: 3rem 7.5% 2rem;
-}
-
-.footer-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.footer-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.footer-logo a {
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-#footer-img {
-    filter: brightness(10000%);
-    width: 50px;
-    height: auto;
-}
-
-.footer-right {
-    text-align: center;
-    font-size: 0.9rem;
-    color: var(--light-gray);
-}
-
-.footer-social {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.footer-social a {
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: var(--white);
-    text-decoration: none;
-    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1000;
 }
 
-.footer-social a:hover {
-    background-color: var(--white);
-    color: var(--main-blue);
-    transform: translateY(-3px);
+.alt-theme .theme-toggle {
+    background-color: var(--accent);
 }
 
 .hidden {
@@ -659,46 +442,6 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 987px) {
-    .navbar {
-        width: 95vw;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links-container {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        background-color: var(--white);
-        transition: max-height 0.5s ease;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-links-container.open {
-        max-height: 90vh;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-
-    .nav-links a {
-        font-size: 1rem;
-        padding: 15px 0;
-        width: 100%;
-        text-align: center;
-    }
-}
-
 @media (max-width: 768px) {
     .blog-header h1 {
         font-size: 2.5rem;
