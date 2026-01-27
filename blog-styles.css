@@ -158,6 +158,7 @@ body {
 
 .featured-meta {
     display: flex;
+    align-items: center;
     gap: 1rem;
     font-size: 0.9rem;
     opacity: 0.85;
@@ -233,6 +234,7 @@ body {
 
 .card-meta {
     display: flex;
+    align-items: center;
     gap: 0.8rem;
     margin-bottom: 1rem;
     font-size: 0.85rem;
@@ -245,7 +247,8 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1;
 }
 
 .card-title {
@@ -343,6 +346,7 @@ body {
 .post-meta {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1.5rem;
     font-size: 1rem;
     color: var(--gray);
