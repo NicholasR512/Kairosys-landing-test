@@ -67,8 +67,12 @@ function renderBlogPosts(category = 'all') {
             </div>
         </article>
     `).join('');
-    } else {
+    } else if (sortedPosts.length === 0) {
+        // Only show "no posts" if there are NO posts at all in this category
         blogGrid.innerHTML = '<p style="text-align: center; color: var(--gray); padding: 3rem;">No posts found in this category.</p>';
+    } else {
+        // If there's only a featured post and no other posts, show empty grid
+        blogGrid.innerHTML = '';
     }
 }
 
