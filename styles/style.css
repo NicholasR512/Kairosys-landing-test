@@ -421,6 +421,20 @@ body {
     text-align: center;
 }
 
+.hero-demo {
+    width: 100%;
+    margin-top: 6rem;
+    border-radius: 10px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.hero-demo iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .hero h1 {
     font-size: 3.5rem;
     color: var(--black);
@@ -453,12 +467,12 @@ body {
     transform: translateX(5px);
 }
 
-.hero video {
+/* .hero video {
     width: 100%;
     height: auto;
     margin-top: 6rem;
     border-radius: 10px;
-}
+} */
 
 /* End of Hero Section */
 
