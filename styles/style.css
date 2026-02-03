@@ -682,7 +682,6 @@ body {
 /* End of Features Section */
 
 /* Carousel Section */
-
 .demo-section {
     width: 60vw;
     max-width: 1600px;
@@ -691,7 +690,6 @@ body {
     /* Add this line to center the section */
     padding-bottom: 4rem;
 }
-
 .demo-title {
     margin-top: 5rem;
     text-align: center;
@@ -699,40 +697,35 @@ body {
     color: var(--black);
     padding-bottom: 4rem;
 }
-
 .carousel-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .carousel-img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
-
 #img-1 {
     display: block;
 }
-
 #img-2 {
     display: none;
 }
-
 #img-3 {
     display: none;
 }
-
 .carousel-controls {
     display: flex;
     justify-content: center;
     margin-top: 40px;
     gap: 30px;
 }
-
 .carousel-controls button {
     font-size: 1rem;
     padding: 2px 30px;
@@ -745,22 +738,18 @@ body {
     color: var(--main-blue);
     transition: all 0.3s ease-in-out;
 }
-
 #cc-1 {
     background-color: var(--main-blue);
     color: var(--white);
 }
-
 #cc-2 {
     background-color: transparent;
     color: var(--main-blue);
 }
-
 #cc-3 {
     background-color: transparent;
     color: var(--main-blue);
 }
-
 /* Carousel Section end */
 
 
