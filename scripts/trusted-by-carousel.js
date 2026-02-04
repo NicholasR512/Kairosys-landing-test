@@ -31,9 +31,7 @@ function initTrustedByCarousel() {
     // Clear existing content
     logoTrack.innerHTML = '';
     
-    // Calculate how many duplicates we need for seamless infinite scrolling
-    // We want at least 2 full sets to ensure smooth looping
-    const duplicateCount = Math.max(2, Math.ceil(10 / trustedCompanies.length));
+    const companyCount = trustedCompanies.length;
     
     // Create a single logo element
     function createLogoElement(company) {
@@ -60,20 +58,45 @@ function initTrustedByCarousel() {
         return link;
     }
     
-    // Add logos multiple times for infinite scroll effect
-    for (let i = 0; i < duplicateCount; i++) {
+    // If fewer than 5 companies, display them centered and static (no animation)
+    if (companyCount < 5) {
+        console.log(`Only ${companyCount} companies - displaying centered without animation`);
+        
+        // Add logos once (no duplication)
         trustedCompanies.forEach(company => {
             logoTrack.appendChild(createLogoElement(company));
         });
+        
+        // Remove animation and center the logos
+        logoTrack.style.animation = 'none';
+        logoTrack.style.justifyContent = 'center';
+        logoTrack.style.width = 'auto';
+        
+    } else {
+        // 5+ companies: Use scrolling animation
+        console.log(`${companyCount} companies - using scrolling carousel`);
+        
+        // Calculate how many duplicates we need for seamless infinite scrolling
+        const duplicateCount = Math.max(2, Math.ceil(10 / companyCount));
+        
+        // Add logos multiple times for infinite scroll effect
+        for (let i = 0; i < duplicateCount; i++) {
+            trustedCompanies.forEach(company => {
+                logoTrack.appendChild(createLogoElement(company));
+            });
+        }
+        
+        // Adjust animation speed based on number of logos
+        const animationDuration = Math.max(20, companyCount * 3); // 3 seconds per logo, minimum 20s
+        logoTrack.style.animationDuration = `${animationDuration}s`;
+        
+        // Ensure animation is enabled
+        logoTrack.style.animation = '';
+        logoTrack.style.justifyContent = '';
+        logoTrack.style.width = '';
+        
+        console.log(`Carousel initialized with ${companyCount} companies (${duplicateCount}x duplicated)`);
     }
-    
-    // Adjust animation speed based on number of logos
-    // More logos = slower speed for better readability
-    const totalLogos = trustedCompanies.length;
-    const animationDuration = Math.max(20, totalLogos * 3); // 3 seconds per logo, minimum 20s
-    logoTrack.style.animationDuration = `${animationDuration}s`;
-    
-    console.log(`Trusted By carousel initialized with ${trustedCompanies.length} companies (${duplicateCount}x duplicated)`);
 }
 
 // Initialize when DOM is ready
