@@ -992,6 +992,15 @@ body.dark-mode .trusted-by-title {
     width: fit-content;
 }
 
+/* Centered layout for < 5 logos (no scrolling) */
+.logo-track.centered {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* match your existing spacing */
+    width: 100%;
+}
+
 .logo-carousel:hover .logo-track {
     animation-play-state: paused;
 }
