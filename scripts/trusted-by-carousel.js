@@ -21,6 +21,7 @@ const trustedCompanies = [
 // Function to generate logo carousel dynamically
 function initTrustedByCarousel() {
     const logoTrack = document.querySelector('.logo-track');
+    const logoCarousel = document.querySelector('.logo-carousel');
     
     // Exit if no track element found or no companies to display
     if (!logoTrack || trustedCompanies.length === 0) {
@@ -58,19 +59,24 @@ function initTrustedByCarousel() {
         return link;
     }
     
-    // If fewer than 5 companies, display them centered and static (no animation)
+    // DECISION POINT: Check company count BEFORE doing anything
     if (companyCount < 5) {
         console.log(`Only ${companyCount} companies - displaying centered without animation`);
         
-        // Add logos once (no duplication)
+        // Add logos ONCE (no duplication)
         trustedCompanies.forEach(company => {
             logoTrack.appendChild(createLogoElement(company));
         });
         
-        // Remove animation and center the logos
+        // Disable animation
         logoTrack.style.animation = 'none';
         logoTrack.style.justifyContent = 'center';
-        logoTrack.style.width = 'auto';
+        
+        // Remove the fade effect on edges since we're not scrolling
+        if (logoCarousel) {
+            logoCarousel.style.maskImage = 'none';
+            logoCarousel.style.webkitMaskImage = 'none';
+        }
         
     } else {
         // 5+ companies: Use scrolling animation
@@ -86,14 +92,15 @@ function initTrustedByCarousel() {
             });
         }
         
-        // Adjust animation speed based on number of logos
-        const animationDuration = Math.max(20, companyCount * 3); // 3 seconds per logo, minimum 20s
-        logoTrack.style.animationDuration = `${animationDuration}s`;
+        // Enable animation
+        logoTrack.style.animation = `scroll ${Math.max(20, companyCount * 3)}s linear infinite`;
+        logoTrack.style.justifyContent = 'flex-start';
         
-        // Ensure animation is enabled
-        logoTrack.style.animation = '';
-        logoTrack.style.justifyContent = '';
-        logoTrack.style.width = '';
+        // Keep the fade effect on edges
+        if (logoCarousel) {
+            logoCarousel.style.maskImage = '';
+            logoCarousel.style.webkitMaskImage = '';
+        }
         
         console.log(`Carousel initialized with ${companyCount} companies (${duplicateCount}x duplicated)`);
     }
