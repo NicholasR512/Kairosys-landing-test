@@ -955,7 +955,7 @@ body.dark-mode .trusted-by-section {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 60px;
-    color: #2c3e50;
+    color: var(--black);
     font-family: 'Poppins', sans-serif;
     letter-spacing: -0.5px;
 }
