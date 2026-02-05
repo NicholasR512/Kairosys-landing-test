@@ -842,7 +842,7 @@ body.who-we-serve-body {
 
 .use-case {
     background: #ffffff;
-    border-left: 4px solid var(--main-blue);
+    border-left: 4px solid #6279b8;
     padding: 1.5rem 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -856,7 +856,7 @@ body.who-we-serve-body {
 .use-case-title {
     margin: 0;
     font-size: 1.25rem;
-    color: var(--main-blue);
+    color: #051650;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -865,12 +865,12 @@ body.who-we-serve-body {
 }
 
 .use-case-title:hover {
-    color: var(--light-blue);
+    color: #3a6965;
 }
 
 .chevron {
     display: inline-block;
-    border: solid var(--main-blue);
+    border: solid #6279b8;
     border-width: 0 2px 2px 0;
     padding: 5px;
     transform: rotate(45deg);
@@ -895,7 +895,7 @@ body.who-we-serve-body {
     font-style: italic;
     color: #3a3a3a;
     margin: 0 0 1rem;
-    border-left: 3px solid var(--main-blue);
+    border-left: 3px solid #c1e4ca;
     padding-left: 1rem;
 }
 
@@ -912,7 +912,7 @@ body.who-we-serve-body {
 }
 
 .use-case-details li strong {
-    color: var(--main-blue);
+    color: #051650;
 }
 
 .dropdown-hint {
@@ -1095,9 +1095,9 @@ body.dark-mode .trusted-by-title {
     text-align: center;
     color: var(--main-blue);
     font-size: 2.25rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 3rem;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.5px;
 }
 
 .testimonials {
