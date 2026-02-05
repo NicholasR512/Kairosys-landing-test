@@ -1129,6 +1129,14 @@ body.dark-mode .trusted-by-title {
     line-height: 1;
 }
 
+.testimonial-quote-mark--bottom {
+    margin-top: -1.2rem;
+    margin-bottom: 1.8rem;
+    align-self: flex-end;
+}
+
+
+
 .testimonial-quote {
     font-size: 1.15rem;
     color: var(--gray);
