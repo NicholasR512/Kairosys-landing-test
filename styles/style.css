@@ -1130,10 +1130,14 @@ body.dark-mode .trusted-by-title {
 }
 
 .testimonial-quote-mark--bottom {
-    margin-top: -1.2rem;
-    margin-bottom: 1.8rem;
-    align-self: flex-end;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    font-size: 1.6rem;
+    opacity: 0.35;
+    pointer-events: none;
 }
+
 
 
 
