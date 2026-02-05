@@ -400,11 +400,11 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
 }
 
 .hero {
-    margin-top: 8vh;
+    margin-top: 4vh;
     max-width: 1600px;
     width: 60%;
     display: flex;
@@ -416,7 +416,7 @@ body {
 
 .hero-demo {
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 3.5rem;
     border-radius: 10px;
     aspect-ratio: 16 / 9;
     overflow: hidden;
@@ -429,25 +429,25 @@ body {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    color: var(--black);
+    font-size: 3rem;
+    color: var(--main-blue);
 }
 
 .hero h3 {
-    margin-top: 2rem;
-    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
     color: var(--gray);
 }
 
 .hero a {
-    font-size: 1.25rem;
-    margin-top: 3rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
     text-decoration: none;
     color: var(--white);
     background-color: var(--main-blue);
-    padding: 13px 26px;
-    border-radius: 10px;
+    padding: 12px 28px;
+    border-radius: 8px;
     transition: all .3s ease-in-out;
 }
 
@@ -466,13 +466,13 @@ body {
 
 .info-title {
     text-align: center;
-    font-size: 2.5rem;
-    color: var(--black);
-    padding-bottom: 5rem;
+    font-size: 2.25rem;
+    color: var(--main-blue);
+    padding-bottom: 3.5rem;
 }
 
 .info-section {
-    padding: 6rem 0;
+    padding: 4.5rem 0;
     background: var(--light-gray);
 }
 
@@ -513,6 +513,7 @@ body {
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: .5rem;
+    color: var(--black);
 }
 
 .info-point p {
@@ -550,6 +551,7 @@ body {
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: .5rem;
+    color: var(--black);
 }
 
 .process-step p {
@@ -584,19 +586,19 @@ body {
 /* Features Section */
 .features-section {
     background-color: var(--light-gray);
-    padding: 1rem 0 10rem 0;
+    padding: 1rem 0 6rem 0;
 }
 
 .feature-title {
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
-    font-size: 2.5rem;
-    color: var(--black);
-    padding-bottom: 4rem;
+    font-size: 2.25rem;
+    color: var(--main-blue);
+    padding-bottom: 3rem;
 }
 
 .features {
-    margin: 3rem auto 5rem auto;
+    margin: 2rem auto 3rem auto;
     width: 85vw;
     max-width: 1600px;
     display: grid;
@@ -676,11 +678,11 @@ body {
     padding-bottom: 4rem;
 }
 .demo-title {
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
-    font-size: 2.5rem;
-    color: var(--black);
-    padding-bottom: 4rem;
+    font-size: 2.25rem;
+    color: var(--main-blue);
+    padding-bottom: 3rem;
 }
 .carousel-container {
     display: flex;
@@ -747,24 +749,24 @@ body.who-we-serve-body {
 .who-we-serve-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
 }
 
 .who-we-serve-text-center {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .who-we-serve-heading {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     margin-bottom: 1rem;
-    color: var(--black);
+    color: var(--main-blue);
 }
 
 .who-we-serve-subtext {
     font-size: 1.125rem;
-    color: #000000;
+    color: var(--gray);
 }
 
 .who-we-serve-grid {
@@ -794,21 +796,22 @@ body.who-we-serve-body {
 .who-we-serve-icon {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #ea9e8d;
+    color: var(--accent);
 }
 
 .who-we-serve-title {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    color: var(--black);
 }
 
 .who-we-serve-text {
-    color: #718096;
+    color: var(--gray);
 }
 
 .use-case-explorer {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     width: 85vw;
     margin: auto;
 }
@@ -820,14 +823,14 @@ body.who-we-serve-body {
 }
 
 .use-case-intro h2 {
-    font-size: 2.5rem;
-    color: var(--black);
+    font-size: 2.25rem;
+    color: var(--main-blue);
     margin-bottom: 1rem;
 }
 
 .use-case-intro p {
     font-size: 1.125rem;
-    color: #333;
+    color: var(--gray);
 }
 
 .use-case-timeline {
@@ -839,7 +842,7 @@ body.who-we-serve-body {
 
 .use-case {
     background: #ffffff;
-    border-left: 4px solid #6279b8;
+    border-left: 4px solid var(--main-blue);
     padding: 1.5rem 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -847,13 +850,13 @@ body.who-we-serve-body {
 }
 
 .use-case.critical {
-    border-left-color: #ea9e8d;
+    border-left-color: var(--accent);
 }
 
 .use-case-title {
     margin: 0;
     font-size: 1.25rem;
-    color: #051650;
+    color: var(--main-blue);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -862,12 +865,12 @@ body.who-we-serve-body {
 }
 
 .use-case-title:hover {
-    color: #3a6965;
+    color: var(--light-blue);
 }
 
 .chevron {
     display: inline-block;
-    border: solid #6279b8;
+    border: solid var(--main-blue);
     border-width: 0 2px 2px 0;
     padding: 5px;
     transform: rotate(45deg);
@@ -892,7 +895,7 @@ body.who-we-serve-body {
     font-style: italic;
     color: #3a3a3a;
     margin: 0 0 1rem;
-    border-left: 3px solid #c1e4ca;
+    border-left: 3px solid var(--main-blue);
     padding-left: 1rem;
 }
 
@@ -909,7 +912,7 @@ body.who-we-serve-body {
 }
 
 .use-case-details li strong {
-    color: #051650;
+    color: var(--main-blue);
 }
 
 .dropdown-hint {
@@ -935,7 +938,7 @@ body.who-we-serve-body {
    ============================================ */
 
 .trusted-by-section {
-    padding: 80px 20px;
+    padding: 4rem 20px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     overflow: hidden;
     position: relative;
@@ -952,10 +955,10 @@ body.dark-mode .trusted-by-section {
 
 .trusted-by-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 700;
-    margin-bottom: 60px;
-    color: var(--black);
+    margin-bottom: 3rem;
+    color: var(--main-blue);
     font-family: 'Poppins', sans-serif;
     letter-spacing: -0.5px;
 }
@@ -1085,15 +1088,15 @@ body.dark-mode .trusted-by-title {
 /* Testimonials Section */
 .testimonials-section {
     background: var(--light-gray);
-    padding: 7rem 0;
+    padding: 4.5rem 0;
 }
 
 .testimonials-title {
     text-align: center;
     color: var(--main-blue);
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 600;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     letter-spacing: 0.01em;
 }
 
@@ -1200,17 +1203,18 @@ body.dark-mode .trusted-by-title {
 
 /* FAQ Section */
 .title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: -40px;
+    margin-top: 4rem;
+    margin-bottom: -2rem;
     text-decoration: none;
     border-bottom: none;
+    color: var(--main-blue);
 }
 
 .questions-container {
     max-width: 800px;
-    margin: 100px auto 120px auto;
+    margin: 5rem auto 6rem auto;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -1298,14 +1302,14 @@ body.dark-mode .trusted-by-title {
 
 .contact-section {
     background: var(--light-gray);
-    padding: 6rem 0;
+    padding: 4.5rem 0;
 }
 
 .contact-title {
     text-align: center;
     color: var(--main-blue);
     margin-bottom: 2.5rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 .contact-form {
