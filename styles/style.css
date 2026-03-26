@@ -1013,7 +1013,7 @@ body.dark-mode .trusted-by-title {
     flex-shrink: 0;
     height: 80px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;  /* ← change from center to flex-end */
     justify-content: center;
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0.7;
