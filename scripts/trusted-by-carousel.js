@@ -76,6 +76,7 @@ function initTrustedByCarousel() {
         logoTrack.classList.add('centered');
         logoTrack.style.animation = 'none';
         logoTrack.style.gridTemplateColumns = `repeat(${companyCount}, auto)`;
+        logoTrack.style.alignItems = 'flex-end'; // Align logos to bottom
 
         trustedCompanies.forEach(company => {
             logoTrack.appendChild(createLogoElement(company));
@@ -107,6 +108,7 @@ function initTrustedByCarousel() {
     // Enable animation
     logoTrack.style.animation = `scroll ${Math.max(20, companyCount * 3)}s linear infinite`;
     logoTrack.style.justifyContent = 'flex-start';
+    logoTrack.style.alignItems = 'flex-end'; // Align logos to bottom
 
     // Restore fade effect
     if (logoCarousel) {
