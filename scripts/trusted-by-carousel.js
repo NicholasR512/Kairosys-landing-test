@@ -11,7 +11,7 @@ const trustedCompanies = [
         website: "https://eliomedica.com/"
     },
    {
-        name: “Carilion Clinic Innovation",
+        name: "Carilion Clinic Innovation",
         logoPath: "Logo/Carilion_logo.png",
         website: "https://www.carilionclinic.org/innovation"
     },
