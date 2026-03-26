@@ -10,6 +10,11 @@ const trustedCompanies = [
         logoPath: "Logo/Eliomedica_logo.png",
         website: "https://eliomedica.com/"
     },
+   {
+        name: “Carilion Clinic Innovation",
+        logoPath: "Logo/Carilion_logo.png",
+        website: "https://www.carilionclinic.org/innovation"
+    },
     // Add more companies as you get them:
     // {
     //     name: "Company Name",
