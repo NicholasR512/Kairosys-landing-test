@@ -993,14 +993,15 @@ body.dark-mode .trusted-by-title {
     gap: 80px;
     animation: scroll 30s linear infinite;
     width: fit-content;
+    align-items: flex-end;  /* ← add this */
 }
 
 /* Centered layout for < 5 logos (no scrolling) */
 .logo-track.centered {
     display: grid;
     justify-content: center;
-    align-items: center;
-    gap: 80px; /* match your existing spacing */
+    align-items: end;
+    gap: 80px;
     width: 100%;
 }
 
